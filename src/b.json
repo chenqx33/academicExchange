@@ -1,0 +1,790 @@
+{
+  "fields": {
+    "owner": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "description": "负责人",
+      "is_unique": false,
+      "label": "负责人",
+      "type": "employee",
+      "is_required": true,
+      "api_name": "owner",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd644124",
+      "is_index_field": false,
+      "is_single": true,
+      "config": {},
+      "index_name": "stringList_1",
+      "status": "new"
+    },
+    "plan_payment_method": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "description": "计划回款方式",
+      "is_unique": false,
+      "label": "计划回款方式",
+      "type": "select_one",
+      "is_required": false,
+      "api_name": "plan_payment_method",
+      "options": [
+        {
+          "not_usable": false,
+          "label": "支票",
+          "value": "1",
+          "config": {
+            "edit": 1,
+            "enable": 1,
+            "remove": 1
+          }
+        },
+        {
+          "not_usable": false,
+          "label": "现金",
+          "value": "2",
+          "config": {
+            "edit": 1,
+            "enable": 1,
+            "remove": 1
+          }
+        },
+        {
+          "not_usable": false,
+          "label": "邮政汇款",
+          "value": "3",
+          "config": {
+            "edit": 1,
+            "enable": 1,
+            "remove": 1
+          }
+        },
+        {
+          "not_usable": false,
+          "label": "电汇",
+          "value": "4",
+          "config": {
+            "edit": 1,
+            "enable": 1,
+            "remove": 1
+          }
+        },
+        {
+          "not_usable": false,
+          "label": "网上转账",
+          "value": "5",
+          "config": {
+            "edit": 1,
+            "enable": 1,
+            "remove": 1
+          }
+        },
+        {
+          "not_usable": false,
+          "label": "支付宝",
+          "value": "6",
+          "config": {
+            "edit": 1,
+            "enable": 1,
+            "remove": 1
+          }
+        },
+        {
+          "not_usable": false,
+          "label": "微信支付",
+          "value": "7",
+          "config": {
+            "edit": 1,
+            "enable": 1,
+            "remove": 1
+          }
+        },
+        {
+          "not_usable": false,
+          "label": "在线支付",
+          "value": "9",
+          "config": {
+            "edit": 1,
+            "enable": 1,
+            "remove": 1
+          }
+        },
+        {
+          "not_usable": false,
+          "label": "线下支付",
+          "value": "10",
+          "config": {
+            "edit": 1,
+            "enable": 1,
+            "remove": 1
+          }
+        },
+        {
+          "not_usable": false,
+          "label": "预存款",
+          "value": "10000",
+          "config": {}
+        },
+        {
+          "not_usable": false,
+          "label": "返利",
+          "value": "10001",
+          "config": {}
+        },
+        {
+          "not_usable": false,
+          "label": "预存款+返利",
+          "value": "10002",
+          "config": {}
+        }
+      ],
+      "define_type": "package",
+      "option_id": "ec16d2411e71c744645de2a75af3bd25",
+      "_id": "5ad95acdbab09c18bd644125",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {
+        "add": 1,
+        "edit": 1,
+        "enable": 1,
+        "remove": 1,
+        "attrs": {
+          "options": 1
+        }
+      },
+      "index_name": "string_1",
+      "status": "new"
+    },
+    "plan_payment_amount": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "length": 18,
+      "description": "计划回款金额（元）",
+      "is_unique": false,
+      "label": "计划回款金额（元）",
+      "currency_unit": "￥",
+      "type": "currency",
+      "decimal_places": 2,
+      "is_required": true,
+      "api_name": "plan_payment_amount",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd644126",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {
+        "edit": 1,
+        "attrs": {
+          "is_required": 0,
+          "label": 1
+        }
+      },
+      "index_name": "double_1",
+      "round_mode": 4,
+      "status": "new"
+    },
+    "approve_employee_id": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "description": "当前审批人",
+      "is_unique": false,
+      "label": "当前审批人",
+      "type": "employee",
+      "is_required": false,
+      "api_name": "approve_employee_id",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd644127",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {},
+      "index_name": "stringList_2",
+      "status": "new"
+    },
+    "remark": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "pattern": "",
+      "description": "备注",
+      "is_unique": false,
+      "label": "备注",
+      "type": "long_text",
+      "is_required": false,
+      "api_name": "remark",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd644128",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {
+        "edit": 1,
+        "enable": 1,
+        "remove": 1,
+        "attrs": {
+          "label": 1
+        }
+      },
+      "index_name": "string_2",
+      "max_length": 2000,
+      "status": "new"
+    },
+    "extend_obj_data_id": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "pattern": "",
+      "description": "extend_obj_data_id",
+      "is_unique": false,
+      "label": "extend_obj_data_id",
+      "type": "text",
+      "is_required": false,
+      "api_name": "extend_obj_data_id",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd644129",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {},
+      "index_name": "string_3",
+      "max_length": 100,
+      "status": "new"
+    },
+    "account_id": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "description": "客户名称",
+      "is_unique": false,
+      "label": "客户名称",
+      "target_api_name": "AccountObj",
+      "type": "object_reference",
+      "target_related_list_name": "related_list_a_payment_plan",
+      "target_related_list_label": "回款计划",
+      "action_on_target_delete": "set_null",
+      "is_required": true,
+      "wheres": [],
+      "api_name": "account_id",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd64412a",
+      "is_index_field": true,
+      "is_single": false,
+      "config": {
+        "edit": 1,
+        "attrs": {
+          "is_required": 0,
+          "label": 1
+        }
+      },
+      "index_name": "string_4",
+      "status": "new"
+    },
+    "remind_time": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "length": 14,
+      "description": "提前几日提醒",
+      "is_unique": false,
+      "label": "提前几日提醒",
+      "type": "number",
+      "decimal_places": 0,
+      "is_required": false,
+      "api_name": "remind_time",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd64412b",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {
+        "edit": 1,
+        "enable": 1,
+        "remove": 1,
+        "attrs": {
+          "label": 1
+        }
+      },
+      "index_name": "double_2",
+      "round_mode": 4,
+      "status": "new"
+    },
+    "attachment": {
+      "describe_api_name": "PaymentPlanObj",
+      "file_amount_limit": 1,
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "description": "附件",
+      "is_unique": false,
+      "label": "附件",
+      "type": "file_attachment",
+      "file_size_limit": 10485760,
+      "is_required": false,
+      "api_name": "attachment",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd64412c",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {
+        "edit": 1,
+        "enable": 1,
+        "remove": 1,
+        "attrs": {
+          "file_amount_limit": 1,
+          "label": 1
+        }
+      },
+      "index_name": "string_5",
+      "support_file_types": [],
+      "status": "new"
+    },
+    "actual_payment_amount": {
+      "describe_api_name": "PaymentPlanObj",
+      "return_type": "number",
+      "description": "实际回款金额（元）",
+      "is_unique": false,
+      "type": "count",
+      "decimal_places": 2,
+      "sub_object_describe_apiname": "OrderPaymentObj",
+      "is_required": false,
+      "wheres": [
+        {
+          "connector": "OR",
+          "filters": [
+            {
+              "value_type": 0,
+              "operator": "EQ",
+              "field_name": "life_status",
+              "field_values": [
+                "normal"
+              ]
+            }
+          ]
+        },
+        {
+          "connector": "OR",
+          "filters": [
+            {
+              "value_type": 0,
+              "operator": "EQ",
+              "field_name": "life_status",
+              "field_values": [
+                "in_change"
+              ]
+            }
+          ]
+        }
+      ],
+      "define_type": "package",
+      "is_single": false,
+      "index_name": "string_6",
+      "field_api_name": "payment_plan_id",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "count_type": "sum",
+      "count_field_api_name": "payment_amount",
+      "label": "实际回款金额（元）",
+      "api_name": "actual_payment_amount",
+      "count_field_type": "currency",
+      "_id": "5ad95acdbab09c18bd64412d",
+      "is_index_field": false,
+      "config": {
+        "edit": 1,
+        "attrs": {
+          "is_readonly": 0,
+          "is_required": 0,
+          "label": 1
+        }
+      },
+      "status": "new"
+    },
+    "order_amount": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "quote_field_type": "currency",
+      "description": "销售订单金额",
+      "is_unique": false,
+      "label": "销售订单金额",
+      "type": "quote",
+      "quote_field": "order_id__r.order_amount",
+      "is_required": false,
+      "api_name": "order_amount",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd64412e",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {
+        "edit": 1,
+        "attrs": {
+          "is_required": 0,
+          "label": 1
+        }
+      },
+      "index_name": "string_7",
+      "status": "new"
+    },
+    "plan_payment_time": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "description": "计划回款日期",
+      "is_unique": false,
+      "label": "计划回款日期",
+      "time_zone": "GMT+8",
+      "type": "date",
+      "is_required": true,
+      "api_name": "plan_payment_time",
+      "define_type": "package",
+      "date_format": "yyyy-MM-dd",
+      "_id": "5ad95acdbab09c18bd64412f",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {
+        "edit": 1,
+        "attrs": {
+          "is_required": 0,
+          "label": 1
+        }
+      },
+      "index_name": "date_1",
+      "status": "new"
+    },
+    "name": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193996606,
+      "prefix": "{yyyy}{mm}{dd}-",
+      "description": "回款计划编号",
+      "is_unique": false,
+      "serial_number": 6,
+      "start_number": 1,
+      "label": "回款计划编号",
+      "type": "auto_number",
+      "is_required": true,
+      "api_name": "name",
+      "define_type": "system",
+      "_id": "5ad95acdbab09c18bd644130",
+      "postfix": "",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {},
+      "index_name": "name",
+      "status": "new"
+    },
+    "plan_payment_status": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "description": "状态",
+      "is_unique": false,
+      "label": "状态",
+      "type": "select_one",
+      "is_required": false,
+      "api_name": "plan_payment_status",
+      "options": [
+        {
+          "not_usable": false,
+          "label": "未完成",
+          "value": "incomplete",
+          "config": {}
+        },
+        {
+          "not_usable": false,
+          "label": "已完成",
+          "value": "completed",
+          "config": {}
+        },
+        {
+          "not_usable": false,
+          "label": "已逾期",
+          "value": "overdue",
+          "config": {}
+        }
+      ],
+      "define_type": "package",
+      "option_id": "3598ae59cce764eb7be8267d152fc156",
+      "_id": "5ad95acdbab09c18bd644131",
+      "is_index_field": false,
+      "is_single": false,
+      "config": {
+        "add": 1,
+        "edit": 1,
+        "attrs": {
+          "options": 1
+        }
+      },
+      "index_name": "string_8",
+      "status": "new"
+    },
+    "owner_department": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "pattern": "",
+      "description": "负责人所在部门",
+      "is_unique": false,
+      "label": "负责人所在部门",
+      "type": "text",
+      "is_required": false,
+      "api_name": "owner_department",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd644132",
+      "is_index_field": false,
+      "is_single": true,
+      "config": {},
+      "index_name": "string_9",
+      "max_length": 255,
+      "status": "new"
+    },
+    "order_id": {
+      "describe_api_name": "PaymentPlanObj",
+      "is_index": true,
+      "is_active": true,
+      "create_time": 1524193997197,
+      "description": "销售订单编号",
+      "is_unique": false,
+      "label": "销售订单编号",
+      "target_api_name": "SalesOrderObj",
+      "type": "object_reference",
+      "target_related_list_name": "related_list_o_payment_plan",
+      "target_related_list_label": "回款计划",
+      "action_on_target_delete": "set_null",
+      "is_required": true,
+      "wheres": [
+        {
+          "connector": "OR",
+          "filters": [
+            {
+              "value_type": 2,
+              "operator": "EQ",
+              "field_name": "account_id",
+              "field_values": [
+                "$account_id$"
+              ]
+            }
+          ]
+        }
+      ],
+      "api_name": "order_id",
+      "define_type": "package",
+      "_id": "5ad95acdbab09c18bd644133",
+      "cascade_parent_api_name": "account_id",
+      "is_index_field": true,
+      "is_single": false,
+      "config": {
+        "edit": 1,
+        "attrs": {
+          "is_required": 0,
+          "label": 1
+        }
+      },
+      "index_name": "string_10",
+      "status": "new"
+    },
+    "_id": {
+      "type": "text",
+      "define_type": "system",
+      "is_index": false,
+      "is_need_convert": false,
+      "is_required": false,
+      "is_unique": false,
+      "max_length": 200,
+      "pattern": "",
+      "label": "_id",
+      "api_name": "_id",
+      "description": "_id",
+      "resource_bundle_key": "PaymentPlanObj._id",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "created_by": {
+      "type": "text",
+      "define_type": "system",
+      "is_index": false,
+      "is_need_convert": true,
+      "is_required": false,
+      "is_unique": false,
+      "max_length": 200,
+      "pattern": "",
+      "label": "创建人",
+      "api_name": "created_by",
+      "description": "created_by",
+      "resource_bundle_key": "PaymentPlanObj.created_by",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "last_modified_by": {
+      "type": "text",
+      "define_type": "system",
+      "is_index": false,
+      "is_need_convert": true,
+      "is_required": false,
+      "is_unique": false,
+      "max_length": 200,
+      "pattern": "",
+      "label": "最后修改人",
+      "api_name": "last_modified_by",
+      "description": "last_modified_by",
+      "resource_bundle_key": "PaymentPlanObj.last_modified_by",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "package": {
+      "type": "text",
+      "define_type": "system",
+      "is_index": false,
+      "is_need_convert": false,
+      "is_required": false,
+      "is_unique": false,
+      "max_length": 200,
+      "pattern": "",
+      "label": "package",
+      "api_name": "package",
+      "description": "package",
+      "resource_bundle_key": "PaymentPlanObj.package",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "tenant_id": {
+      "type": "text",
+      "define_type": "system",
+      "is_index": false,
+      "is_need_convert": false,
+      "is_required": true,
+      "is_unique": false,
+      "max_length": 200,
+      "pattern": "",
+      "label": "tenant_id",
+      "api_name": "tenant_id",
+      "description": "tenant_id",
+      "resource_bundle_key": "PaymentPlanObj.tenant_id",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "object_describe_id": {
+      "type": "text",
+      "define_type": "system",
+      "is_index": false,
+      "is_need_convert": false,
+      "is_required": true,
+      "is_unique": false,
+      "max_length": 200,
+      "pattern": "",
+      "label": "object_describe_id",
+      "api_name": "object_describe_id",
+      "description": "object_describe_id",
+      "resource_bundle_key": "PaymentPlanObj.object_describe_id",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "object_describe_api_name": {
+      "type": "text",
+      "define_type": "system",
+      "is_index": false,
+      "is_need_convert": false,
+      "is_required": true,
+      "is_unique": false,
+      "max_length": 200,
+      "pattern": "",
+      "label": "object_describe_api_name",
+      "api_name": "object_describe_api_name",
+      "description": "object_describe_api_name",
+      "resource_bundle_key": "PaymentPlanObj.object_describe_api_name",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "version": {
+      "type": "number",
+      "define_type": "system",
+      "is_index": false,
+      "is_need_convert": false,
+      "is_required": false,
+      "is_unique": false,
+      "round_mode": 4,
+      "length": 8,
+      "decimal_places": 0,
+      "label": "version",
+      "api_name": "version",
+      "description": "version",
+      "resource_bundle_key": "PaymentPlanObj.version",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "create_time": {
+      "type": "date_time",
+      "define_type": "system",
+      "is_index": true,
+      "is_need_convert": false,
+      "is_required": false,
+      "is_unique": false,
+      "time_zone": "",
+      "date_format": "yyyy-MM-dd HH:mm:ss",
+      "label": "创建时间",
+      "api_name": "create_time",
+      "description": "create_time",
+      "resource_bundle_key": "PaymentPlanObj.create_time",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "last_modified_time": {
+      "type": "date_time",
+      "define_type": "system",
+      "is_index": true,
+      "is_need_convert": false,
+      "is_required": false,
+      "is_unique": false,
+      "time_zone": "",
+      "date_format": "yyyy-MM-dd HH:mm:ss",
+      "label": "最后修改时间",
+      "api_name": "last_modified_time",
+      "description": "last_modified_time",
+      "resource_bundle_key": "PaymentPlanObj.last_modified_time",
+      "status": "released",
+      "create_time": 1524193997154
+    },
+    "is_deleted": {
+      "type": "true_or_false",
+      "define_type": "system",
+      "is_index": false,
+      "is_need_convert": false,
+      "is_required": false,
+      "is_unique": false,
+      "label": "is_deleted",
+      "api_name": "is_deleted",
+      "description": "is_deleted",
+      "default_value": false,
+      "resource_bundle_key": "PaymentPlanObj.is_deleted",
+      "status": "released",
+      "create_time": 1524193997154
+    }
+  },
+  "validate_rules": {},
+  "triggers": {},
+  "actions": {},
+  "_id": "5ad95accbab09c18bd644123",
+  "tenant_id": "55997",
+  "api_name": "PaymentPlanObj",
+  "display_name": "回款计划",
+  "package": "CRM",
+  "is_active": true,
+  "define_type": "package",
+  "version": 1,
+  "is_deleted": false,
+  "revision": 1,
+  "last_modified_time": 1524193997154,
+  "create_time": 1524193997154,
+  "store_table_name": "payment_plan",
+  "description": "回款计划"
+}
