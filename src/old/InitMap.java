@@ -1,3 +1,5 @@
+package old;
+
 import java.util.HashMap;
 
 /**
@@ -6,7 +8,7 @@ import java.util.HashMap;
  * @author cqx
  * @date 2018/3/15 15:27
  */
-public class ceshi3 {
+public class InitMap {
     public static void main(String[] args) {
         HashMap h = new HashMap(){{
             put("a","b");

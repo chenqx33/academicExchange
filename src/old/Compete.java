@@ -1,10 +1,10 @@
-import com.sun.org.apache.xerces.internal.dom.PSVIAttrNSImpl;
+package old;
 
 /**
  * @author cqx
  * @date 2018/4/23 15:14
  */
-public class ceshi26 extends Thread {
+public class Compete extends Thread {
 
      private int count = 5;
 
@@ -15,7 +15,7 @@ public class ceshi26 extends Thread {
     }
 
     public static void main(String[] args) {
-        ceshi26 ceshi26 = new ceshi26();
+        Compete ceshi26 = new Compete();
         Thread thread1 = new Thread(ceshi26, "thread1");
         Thread thread2 = new Thread(ceshi26, "thread2");
         Thread thread3 = new Thread(ceshi26, "thread3");

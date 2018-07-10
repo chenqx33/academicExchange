@@ -1,10 +1,12 @@
+package old;
+
 import java.lang.reflect.Field;
 
 /**
  * @author cqx
  * @date 2018/4/10 17:59
  */
-public class ceshi23 {
+public class ClassUpdateTest {
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
         Class cache = Integer.class.getDeclaredClasses()[0];
         Field myCache = cache.getDeclaredField("cache");

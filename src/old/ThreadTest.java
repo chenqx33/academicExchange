@@ -1,12 +1,14 @@
+package old;
+
 /**
  * @author cqx
  * @date 2018/3/23 11:39
  */
-public class ceshi4 {
+public class ThreadTest {
     static int count=0;
 
     public static void main(String[] args) {
-        add("b");
+        add("a");
     }
     public static void add(String str){
         if("a".equals(str)){

@@ -1,3 +1,5 @@
+package old;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,7 +7,7 @@ import java.util.List;
  * @author cqx
  * @date 2018/7/3 19:32
  */
-public class ceshi29 {
+public class BucketSort {
 
     public static void main(String[] args) {
 

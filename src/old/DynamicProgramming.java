@@ -1,8 +1,10 @@
+package old;
+
 /**
  * @author cqx
  * @date 2018/3/23 12:53
  */
-public class ceshi5 {
+public class DynamicProgramming {
     public static void main(String[] args) {
         int[][] a = {{10,5,7,4},{9,11,12,6},{1,2,4,9},{15,1,1,2}};
         int aa = shortestRoad(a);

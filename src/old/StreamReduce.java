@@ -1,3 +1,5 @@
+package old;
+
 import java.util.Arrays;
 import java.util.stream.Stream;
 
@@ -5,7 +7,7 @@ import java.util.stream.Stream;
  * @author cqx
  * @date 2018/4/23 15:49
  */
-public class ceshi27 {
+public class StreamReduce {
     public static void main(String[] args) {
         Stream<Integer> stream;
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});

@@ -1,3 +1,5 @@
+package old;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -5,7 +7,7 @@ import java.util.Set;
  * @author cqx
  * @date 2018/3/23 16:26
  */
-public class ceshi9 {
+public class SetTest {
     public static void main(String[] args) {
         Set set = new HashSet();
         set.add("a");

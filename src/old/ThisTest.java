@@ -1,8 +1,10 @@
+package old;
+
 /**
  * @author cqx
  * @date 2018/3/29 11:33
  */
-public class ceshi13 {
+public class ThisTest {
     public static void main(String[] args) {
     Zi zi = new Zi();
     zi.show();

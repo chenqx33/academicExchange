@@ -1,3 +1,5 @@
+package old;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -6,7 +8,7 @@ import java.util.Date;
  * @author cqx
  * @date 2018/3/29 17:30
  */
-public class ceshi15 {
+public class DateTest {
     public static void main(String[] args) throws ParseException {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");

@@ -1,14 +1,10 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+package old;
 
 /**
  * @author cqx
  * @date 2018/7/6 15:27
  */
-public class ceshi30 {
+public class BinarySystem {
     public static void main(String[] args) {
         String a = "0b0100";
         String b = "0b0001";
