@@ -8,6 +8,5 @@ public class TestTest {
 
     @org.junit.Test
     public void hello(){
-        System.out.println("a");
     }
 }
