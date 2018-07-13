@@ -1,4 +1,7 @@
-package old;
+import java.util.Arrays;
+
+import pojo.MyImpl;
+import pojo.MyIntegerface;
 
 /**
  * @author cqx
@@ -8,5 +11,7 @@ public class TestTest {
 
     @org.junit.Test
     public void hello(){
+        MyIntegerface<String> impl = new MyImpl();
+        impl.printAll(Arrays.asList("1","2","3"));
     }
 }
