@@ -1,6 +1,8 @@
 package com.chenqx.old;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -10,6 +12,14 @@ import java.util.stream.Collectors;
 public class ArrayToString {
     public static void main(String[] args) {
         String[] str = {"a","b","c"};
+        List<String> s = new ArrayList();
+        s.add("1");
+        s.add("1");
+        s.add("1");
+        s.add("1");
+        s.add("1");
+        s.add("1");
+        System.out.println(s.toArray()[1]);
         String str2=String.join("-",str);
         System.out.println(str2);
         String str3 = Arrays.stream(str).collect(Collectors.joining("-"));

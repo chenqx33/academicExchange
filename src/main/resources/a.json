@@ -1,0 +1,244 @@
+{
+  "package": "CRM",
+  "api_name": "AccountObj_layout_generate_by_UDObjectServer__c",
+  "ref_object_api_name": "AccountObj",
+  "layout_type": "detail",
+  "display_name": "客户默认布局",
+  "layout_description": "客户默认布局",
+  "is_default": true,
+  "api_version": 1.0,
+  "components": [
+    {
+      "type": "form",
+      "buttons": [],
+      "api_name": "form_component_generate_by_UDObjectServer__c",
+      "field_section": [
+        {
+          "title": "基本信息",
+          "column": "2",
+          "header": "基本信息",
+          "is_show": true,
+          "api_name": "base_field_section__c",
+          "tab_index": "ltr",
+          "form_fields": [
+            {
+              "field_name": "account_type",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            },
+            {
+              "field_name": "account_level",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            },
+            {
+              "field_name": "remark",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "long_text"
+            },
+            {
+              "field_name": "account_status",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            },
+            {
+              "field_name": "account_no",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "partner_id",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "object_reference"
+            },
+            {
+              "field_name": "tel",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "out_resources",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            },
+            {
+              "field_name": "fax",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "email",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "email"
+            },
+            {
+              "field_name": "owner",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "employee"
+            },
+            {
+              "field_name": "lock_status",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            },
+            {
+              "field_name": "url",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "back_reason",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            },
+            {
+              "field_name": "name",
+              "is_readonly": false,
+              "is_required": true,
+              "render_type": "text"
+            },
+            {
+              "field_name": "industry_level2",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            },
+            {
+              "field_name": "industry_level1",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            },
+            {
+              "field_name": "UDSText1__c",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "high_seas_name",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "account_source",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            }
+          ],
+          "show_header": true
+        },
+        {
+          "title": "地区定位",
+          "column": "2",
+          "header": "地区定位",
+          "is_show": true,
+          "api_name": "area_location",
+          "tab_index": "ltr",
+          "form_fields": [
+            {
+              "field_name": "location",
+              "is_required": false,
+              "render_type": "location"
+            },
+            {
+              "field_name": "country",
+              "is_required": false,
+              "render_type": "country"
+            },
+            {
+              "field_name": "province",
+              "is_required": false,
+              "render_type": "province"
+            },
+            {
+              "field_name": "city",
+              "is_required": false,
+              "render_type": "city"
+            },
+            {
+              "field_name": "district",
+              "is_required": false,
+              "render_type": "district"
+            },
+            {
+              "field_name": "address",
+              "is_required": false,
+              "render_type": "text"
+            }
+          ],
+          "show_header": true
+        },
+        {
+          "title": "系统信息",
+          "column": "2",
+          "header": "系统信息",
+          "is_show": true,
+          "api_name": "system_form_field_generate_by_UDObjectServer__c",
+          "tab_index": "ltr",
+          "form_fields": [
+            {
+              "field_name": "owner_department",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "deal_status",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "select_one"
+            },
+            {
+              "field_name": "recycled_reason",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "last_followed_time",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "date_time"
+            },
+            {
+              "field_name": "completion_rate",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "remaining_time",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "text"
+            },
+            {
+              "field_name": "transfer_count",
+              "is_readonly": false,
+              "is_required": false,
+              "render_type": "number"
+            }
+          ],
+          "show_header": true
+        }
+      ]
+    }
+  ]
+}
