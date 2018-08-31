@@ -1,20 +1,20 @@
 package com.chenqx;
 
 import com.chenqx.pojo.Book;
+import com.chenqx.pojo.MyImpl;
+import com.chenqx.pojo.MyIntegerface;
 import com.chenqx.pojo.Season;
-import com.sun.javafx.fxml.expression.KeyPath;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.github.fge.jackson.JsonLoader;
+import com.github.fge.jsonschema.core.report.ProcessingReport;
+import com.github.fge.jsonschema.main.JsonSchemaFactory;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
-
-import com.chenqx.pojo.MyImpl;
-import com.chenqx.pojo.MyIntegerface;
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-
-import javax.sound.midi.Soundbank;
 
 /**
  * @author cqx
@@ -136,6 +136,27 @@ public class TestTest {
         Map<String, Book> collect = list.stream().collect(Collectors.toMap(Book::getAuth, o -> o));
     }
 
+    @Test
+    public void hhh(){
+        HashMap<String,String> map = new HashMap<>();
+        String s = map.get("22");
+        System.out.println(map.getOrDefault("s",null)==null);
+    }
+
+    @Test
+    public void jsonschema(){
+        String failure = "{\"type\":\"hasCondition\",\"value\":{\"conditions\":[{\"type\":\"and\",\"conditions\":[{\"left\":{\"expression\":\"country\"},\"right\":{\"type\":{\"name\":\"country\"},\"value\":\"248\"},\"type\":\"EQ\"},{\"left\":{\"expression\":\"email\"},\"right\":{\"type\":{\"name\":\"email\"},\"value\":\"1212\"},\"type\":\"LIKE\"},{\"left\":{\"expression\":\"owner\"},\"right\":{\"type\":{\"name\":\"employee\"},\"value\":\"\"},\"type\":\"IS\"}]},{\"type\":\"and\",\"conditions\":[{\"left\":{\"expression\":\"partner_category\"},\"right\":{\"type\":{\"name\":\"select_one\"},\"value\":\"01\"},\"type\":\"EQ\"},{\"left\":{\"expression\":\"industry_level1\"},\"right\":{\"type\":{\"name\":\"select_one\"},\"value\":\"c3e04661a4e745e3a45e8bddd54ce07b\"},\"type\":\"EQ\"}]}],\"type\":\"or\"}}";
+        String Schema = "{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\",\"minLength\":10,\"maxLength\":13},\"value\":{\"type\":\"object\",\"properties\":{\"conditions\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"type\":{\"type\":\"string\"},\"conditions\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"left\":{\"type\":\"object\"},\"right\":{\"type\":\"object\"},\"type\":{\"type\":\"string\"}},\"required\":[\"left\",\"right\",\"type\"]}}}},\"minItems\":1},\"type\":{\"type\":\"string\"}},\"required\":[\"conditions\",\"type\"]}},\"required\":[\"type\",\"value\"]}";
+        ProcessingReport report = null;
+        try {
+            JsonNode data = JsonLoader.fromString(failure);
+            JsonNode schema = JsonLoader.fromString(Schema);
+            report = JsonSchemaFactory.byDefault().getValidator().validateUnchecked(schema, data);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(report);
+    }
 
 
 }
