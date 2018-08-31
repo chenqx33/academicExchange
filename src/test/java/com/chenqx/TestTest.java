@@ -155,7 +155,8 @@ public class TestTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(report);
+
+        System.out.println(report.isSuccess());
     }
 
 
