@@ -1,34 +1,5208 @@
 {
-  "$schema":"http://json-schema.org/draft-04/schema",
-  "type":"object",
-  "properties": {
-    "name": {
-      "type":"string"
-    },
-
-    "versions": {
-      "type":"array",
-      "items": {
-        "type":"object",
-        "properties": {
-          "id": {
-            "type":"string"
-          },
-
-          "version": {
-            "type":"integer"
-          },
-
-          "comment": {
-            "type":"string"
-          }
+  "menus": [
+    {
+      "id": "5ac19489830bdb9ada55e504",
+      "displayName": "CRM",
+      "items": [
+        {
+          "id": "5b8c8c53bab09cba354bc906",
+          "type": "menu",
+          "menuItemId": "5b88f4f6bab09c87a9137d5f",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "CRM提醒",
+          "referenceApiname": "CrmRemind",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "isHidden": false,
+          "number": 0,
+          "iconPathMenu": "null"
         },
-
-        "required":["id", "version"],
-        "minItems":1
-      }
+        {
+          "id": "5b8c8c53bab09cba354bc907",
+          "type": "menu",
+          "url": "crm/info",
+          "menuItemId": "5b88f4f6bab09c87a9137d60",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "销售记录",
+          "referenceApiname": "CrmInfo",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_2ffeccc3d8f848d7bdc966322670d4f6.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "isHidden": false,
+          "number": 1,
+          "iconPathMenu": "A_201802_06_756b1d8dd13a48c5b64fd8015a69ebe6.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc908",
+          "type": "menu",
+          "url": "bi/list",
+          "menuItemId": "5b88f4f6bab09c87a9137d62",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "报表",
+          "referenceApiname": "Report",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "isHidden": false,
+          "number": 2,
+          "iconPathMenu": "null"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc90a",
+          "pid": "5b8c8c53bab09cba354bc909",
+          "type": "menu",
+          "url": "crm/market",
+          "menuItemId": "5b88f4f6bab09c87a9137d8b",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "市场活动",
+          "referenceApiname": "MarketingEventObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5223d4e9bbc0440cbe882d59b1f7c0b2.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 0,
+          "iconPathMenu": "A_201802_06_4071e0d756ac41dfaf781f1fbc569dd7.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc90b",
+          "pid": "5b8c8c53bab09cba354bc909",
+          "type": "menu",
+          "url": "crm/clue",
+          "menuItemId": "5b88f4f6bab09c87a9137d8c",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "销售线索",
+          "referenceApiname": "LeadsObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_601937b9774d4f52878a74340fd39b07.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 1,
+          "iconPathMenu": "A_201802_06_7324c7f5268246debce84d085de16314.png"
+        },
+        {
+          "pid": "5b88f4f6bab09c87a9137d41",
+          "type": "menu",
+          "url": "crm/cluepool",
+          "menuItemId": "5b88f4f6bab09c87a9137d8d",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "线索池",
+          "referenceApiname": "LeadsPoolObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b4ac413cb2394f659d01c204cd4d6aae.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "isHidden": false,
+          "number": 10045,
+          "iconPathMenu": "A_201802_06_8e9b105058b6416fa823293e10404093.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc90d",
+          "pid": "5b8c8c53bab09cba354bc90c",
+          "type": "menu",
+          "url": "crm/customer",
+          "menuItemId": "5b88f4f6bab09c87a9137d8e",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "客户",
+          "referenceApiname": "AccountObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_274cb25dac6849eb89125740cd7c0ff9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 0,
+          "iconPathMenu": "A_201802_06_f2ac5e08fe3d4a0995f2fb021787582a.png"
+        },
+        {
+          "pid": "5b88f4f6bab09c87a9137d42",
+          "type": "menu",
+          "url": "crm/highseas",
+          "menuItemId": "5b88f4f6bab09c87a9137d8f",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "公海",
+          "referenceApiname": "HighSeasObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_f21517b8060c465c92ae0fd733080b86.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "isHidden": false,
+          "number": 10055,
+          "iconPathMenu": "A_201802_06_6846030421f34d60825507c297f57067.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc90e",
+          "pid": "5b8c8c53bab09cba354bc90c",
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b88f4f6bab09c87a9137d90",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "联系人",
+          "referenceApiname": "ContactObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_8ba8265450264fa9abb30d1eed5d35c9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 1,
+          "iconPathMenu": "A_201802_06_7cd8d54000344e758b0e185a9f26778f.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc90f",
+          "pid": "5b8c8c53bab09cba354bc90c",
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b88f4f6bab09c87a9137d93",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "商机",
+          "referenceApiname": "OpportunityObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_1e223aae4de043aebf608a95b2d43853.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 2,
+          "iconPathMenu": "A_201802_06_9be0d2e66d5f41ccae721990c1203272.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc910",
+          "pid": "5b8c8c53bab09cba354bc90c",
+          "type": "menu",
+          "menuItemId": "5b88f4f6bab09c87a9137d94",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "报价单",
+          "referenceApiname": "QuoteObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_2a41a1d684ab47d097e737aad03c706f.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 3,
+          "iconPathMenu": "A_201802_06_10967e252ed849c487c6ac13182b62cd.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc911",
+          "pid": "5b8c8c53bab09cba354bc90c",
+          "type": "menu",
+          "menuItemId": "5b88f4f6bab09c87a9137d95",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "报价单明细",
+          "referenceApiname": "QuoteLinesObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_d9c9b4538fb04c44970e7e878cc5ada6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 4,
+          "iconPathMenu": "A_201802_06_31dcf9a6efe24589b6ccbc46228ec22a.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc913",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "url": "crm/contract",
+          "menuItemId": "5b88f4f6bab09c87a9137d96",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "合同",
+          "referenceApiname": "ContractObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_bb2f11f55820417997df6f6465929a68.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 0,
+          "iconPathMenu": "A_201802_06_88d72a86d8894dba997f7821173c6794.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc914",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "url": "crm/numberform",
+          "menuItemId": "5b88f4f6bab09c87a9137d97",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "销售订单",
+          "referenceApiname": "SalesOrderObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_17347ec6272d4eca9a1c6ee4273bbdf0.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 1,
+          "iconPathMenu": "A_201802_06_5017a80eaf6b4bc6a6e1160a3629fbb3.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc915",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "menuItemId": "5b88f4f6bab09c87a9137d98",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "回款计划",
+          "referenceApiname": "PaymentPlanObj",
+          "iconPathHome": "A_201802_06_fa9c1b43bdfc425080910c9e865b4eda.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 2,
+          "iconPathMenu": "A_201802_06_496d84a7d1494a7ab92fd600f63b592d.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc916",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b88f4f6bab09c87a9137d99",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "回款",
+          "referenceApiname": "PaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_025cac2f45d64291b4652e69ce841507.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 3,
+          "iconPathMenu": "A_201802_06_8289109ae4204c16945996d166277660.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc917",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b88f4f6bab09c87a9137d9a",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "回款明细",
+          "referenceApiname": "OrderPaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201803_26_25626c466eca400a9b176978094b7faf.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "isHidden": false,
+          "number": 4,
+          "iconPathMenu": "A_201803_26_8e48e1f525d648ceb3f0f2f6e9fbe10a.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc918",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "url": "crm/invoice",
+          "menuItemId": "5b88f4f6bab09c87a9137d9b",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "开票申请",
+          "referenceApiname": "InvoiceApplicationObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_e4e10c5008914273bd7efb6ec7a0fe16.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 5,
+          "iconPathMenu": "A_201802_06_7e5a61c6f8bb44dc8cdb96c3d43c8f22.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc919",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "url": "crm/product",
+          "menuItemId": "5b88f4f6bab09c87a9137d9c",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "产品",
+          "referenceApiname": "ProductObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5fc4710a48cb490fb0d100a5ba9e41e8.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 6,
+          "iconPathMenu": "A_201802_06_b5631021a76d4ead9902ba23e22488ee.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc91a",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "menuItemId": "5b88f4f6bab09c87a9137d9d",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "价目表",
+          "referenceApiname": "PriceBookObj",
+          "iconIndex": 0,
+          "iconPathHome": "A_201802_06_f9e01d7140094a9ebd48e61c1536c1bd.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 7,
+          "iconPathMenu": "A_201802_06_e5e05a43e5c3499a86b8706da64c780d.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc91b",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "menuItemId": "5b88f4f6bab09c87a9137d9e",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "价目表明细",
+          "referenceApiname": "PriceBookProductObj",
+          "iconIndex": 16,
+          "iconPathHome": "A_201802_06_07a8c99ac20f4fc999e8f269533358e5.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 8,
+          "iconPathMenu": "A_201802_06_60ff2bc345f54d849670c54657c0048d.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc91c",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "url": "crm/returnnumber",
+          "menuItemId": "5b88f4f6bab09c87a9137d9f",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "退货单",
+          "referenceApiname": "ReturnedGoodsInvoiceObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b0f47fb542af4b568d06d6a4ededc7c7.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 9,
+          "iconPathMenu": "A_201802_06_5e2d0693f1614c848cd2abaa24ac7ae2.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc91d",
+          "pid": "5b8c8c53bab09cba354bc912",
+          "type": "menu",
+          "url": "crm/gb",
+          "menuItemId": "5b88f4f6bab09c87a9137da0",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "退款",
+          "referenceApiname": "RefundObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_c62158c970c44482a12aec51c3d58244.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 10,
+          "iconPathMenu": "A_201802_06_48487e634803453f88c1f073c8b0fd78.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc91e",
+          "type": "menu",
+          "url": "crm/opeflow",
+          "menuItemId": "5b88f4f6bab09c87a9137d64",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "业务流程实例",
+          "referenceApiname": "BpmInstance",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_08_6bb5c4c11b2241979a69694216cb245f.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "isHidden": false,
+          "number": 6,
+          "iconPathMenu": "A_201802_08_2a9be3b5029d42fc9056ed74f2e5ebfb.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc920",
+          "pid": "5b8c8c53bab09cba354bc91f",
+          "type": "menu",
+          "url": "crm/service",
+          "menuItemId": "5b88f4f6bab09c87a9137d89",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "服务管理",
+          "referenceApiname": "CrmServiceManager",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "isHidden": false,
+          "number": 0,
+          "iconPathMenu": "null"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc921",
+          "type": "menu",
+          "url": "crm/rival",
+          "menuItemId": "5b88f4f6bab09c87a9137d68",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "竞争对手",
+          "referenceApiname": "CrmRival",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "isHidden": false,
+          "number": 8,
+          "iconPathMenu": "null"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc922",
+          "type": "menu",
+          "url": "crm/visit",
+          "menuItemId": "5b88f4f6bab09c87a9137d69",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "拜访",
+          "referenceApiname": "VisitingObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5563c92a17a74b0c9f40b1fb111fffbc.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 9,
+          "iconPathMenu": "A_201802_06_58e77dd664a044b68f59dd954e8a096a.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc923",
+          "type": "menu",
+          "menuItemId": "5b88f4f6bab09c87a9137d87",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 10,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc924",
+          "type": "menu",
+          "menuItemId": "5b88f4f6bab09c87a9137d88",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "自定义对象(示例)",
+          "referenceApiname": "object_OMeiv__c",
+          "iconIndex": 0,
+          "iconPathHome": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "isHidden": false,
+          "number": 11,
+          "iconPathMenu": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png"
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc91f",
+          "type": "group",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "服务及工单管理",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 7
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc912",
+          "type": "group",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "订单及回款管理",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 5
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc90c",
+          "type": "group",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "客户及商机管理",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 4
+        },
+        {
+          "id": "5b8c8c53bab09cba354bc909",
+          "type": "group",
+          "menuId": "5ac19489830bdb9ada55e504",
+          "displayName": "市场及线索管理",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 3
+        }
+      ],
+      "isSystem": true,
+      "isCurrent": false
+    },
+    {
+      "id": "5b8decdfbab09c64112fd567",
+      "displayName": "123451",
+      "items": [
+        {
+          "type": "menu",
+          "url": "crm/info",
+          "menuItemId": "5b8decdfbab09c64112fd595",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "销售记录",
+          "referenceApiname": "CrmInfo",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_2ffeccc3d8f848d7bdc966322670d4f6.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 1,
+          "iconPathMenu": "A_201802_06_756b1d8dd13a48c5b64fd8015a69ebe6.png"
+        },
+        {
+          "pid": "5b8ded7abab09c64112fe397",
+          "type": "menu",
+          "menuItemId": "5b8decdfbab09c64112fd593",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "CRM提醒",
+          "referenceApiname": "CrmRemind",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 1,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "bi/list",
+          "menuItemId": "5b8decdfbab09c64112fd596",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "报表",
+          "referenceApiname": "Report",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 2,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/market",
+          "menuItemId": "5b8decdfbab09c64112fd598",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "市场活动",
+          "referenceApiname": "MarketingEventObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5223d4e9bbc0440cbe882d59b1f7c0b2.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 3,
+          "iconPathMenu": "A_201802_06_4071e0d756ac41dfaf781f1fbc569dd7.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/clue",
+          "menuItemId": "5b8decdfbab09c64112fd599",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "销售线索",
+          "referenceApiname": "LeadsObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_601937b9774d4f52878a74340fd39b07.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 4,
+          "iconPathMenu": "A_201802_06_7324c7f5268246debce84d085de16314.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/cluepool",
+          "menuItemId": "5b8decdfbab09c64112fd59a",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "线索池",
+          "referenceApiname": "LeadsPoolObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b4ac413cb2394f659d01c204cd4d6aae.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 5,
+          "iconPathMenu": "A_201802_06_8e9b105058b6416fa823293e10404093.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/customer",
+          "menuItemId": "5b8decdfbab09c64112fd59b",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "客户",
+          "referenceApiname": "AccountObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_274cb25dac6849eb89125740cd7c0ff9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 6,
+          "iconPathMenu": "A_201802_06_f2ac5e08fe3d4a0995f2fb021787582a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/highseas",
+          "menuItemId": "5b8decdfbab09c64112fd59c",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "公海",
+          "referenceApiname": "HighSeasObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_f21517b8060c465c92ae0fd733080b86.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 7,
+          "iconPathMenu": "A_201802_06_6846030421f34d60825507c297f57067.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b8decdfbab09c64112fd59d",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "联系人",
+          "referenceApiname": "ContactObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_8ba8265450264fa9abb30d1eed5d35c9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 8,
+          "iconPathMenu": "A_201802_06_7cd8d54000344e758b0e185a9f26778f.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b8decdfbab09c64112fd59f",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "商机",
+          "referenceApiname": "OpportunityObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_1e223aae4de043aebf608a95b2d43853.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 10,
+          "iconPathMenu": "A_201802_06_9be0d2e66d5f41ccae721990c1203272.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decdfbab09c64112fd5a0",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "报价单",
+          "referenceApiname": "QuoteObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_2a41a1d684ab47d097e737aad03c706f.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 11,
+          "iconPathMenu": "A_201802_06_10967e252ed849c487c6ac13182b62cd.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decdfbab09c64112fd5a1",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "报价单明细",
+          "referenceApiname": "QuoteLinesObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_d9c9b4538fb04c44970e7e878cc5ada6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 12,
+          "iconPathMenu": "A_201802_06_31dcf9a6efe24589b6ccbc46228ec22a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contract",
+          "menuItemId": "5b8decdfbab09c64112fd5a2",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "合同",
+          "referenceApiname": "ContractObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_bb2f11f55820417997df6f6465929a68.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 13,
+          "iconPathMenu": "A_201802_06_88d72a86d8894dba997f7821173c6794.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/numberform",
+          "menuItemId": "5b8decdfbab09c64112fd5a3",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "销售订单",
+          "referenceApiname": "SalesOrderObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_17347ec6272d4eca9a1c6ee4273bbdf0.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 14,
+          "iconPathMenu": "A_201802_06_5017a80eaf6b4bc6a6e1160a3629fbb3.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decdfbab09c64112fd5a4",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "回款计划",
+          "referenceApiname": "PaymentPlanObj",
+          "iconPathHome": "A_201802_06_fa9c1b43bdfc425080910c9e865b4eda.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 15,
+          "iconPathMenu": "A_201802_06_496d84a7d1494a7ab92fd600f63b592d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b8decdfbab09c64112fd5a5",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "回款",
+          "referenceApiname": "PaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_025cac2f45d64291b4652e69ce841507.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 16,
+          "iconPathMenu": "A_201802_06_8289109ae4204c16945996d166277660.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b8decdfbab09c64112fd5a6",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "回款明细",
+          "referenceApiname": "OrderPaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201803_26_25626c466eca400a9b176978094b7faf.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 17,
+          "iconPathMenu": "A_201803_26_8e48e1f525d648ceb3f0f2f6e9fbe10a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/invoice",
+          "menuItemId": "5b8decdfbab09c64112fd5a7",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "开票申请",
+          "referenceApiname": "InvoiceApplicationObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_e4e10c5008914273bd7efb6ec7a0fe16.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 18,
+          "iconPathMenu": "A_201802_06_7e5a61c6f8bb44dc8cdb96c3d43c8f22.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/product",
+          "menuItemId": "5b8decdfbab09c64112fd5a8",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "产品",
+          "referenceApiname": "ProductObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5fc4710a48cb490fb0d100a5ba9e41e8.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 19,
+          "iconPathMenu": "A_201802_06_b5631021a76d4ead9902ba23e22488ee.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decdfbab09c64112fd5a9",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "价目表",
+          "referenceApiname": "PriceBookObj",
+          "iconIndex": 0,
+          "iconPathHome": "A_201802_06_f9e01d7140094a9ebd48e61c1536c1bd.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 20,
+          "iconPathMenu": "A_201802_06_e5e05a43e5c3499a86b8706da64c780d.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decdfbab09c64112fd5aa",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "价目表明细",
+          "referenceApiname": "PriceBookProductObj",
+          "iconIndex": 16,
+          "iconPathHome": "A_201802_06_07a8c99ac20f4fc999e8f269533358e5.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 21,
+          "iconPathMenu": "A_201802_06_60ff2bc345f54d849670c54657c0048d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/returnnumber",
+          "menuItemId": "5b8decdfbab09c64112fd5ab",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "退货单",
+          "referenceApiname": "ReturnedGoodsInvoiceObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b0f47fb542af4b568d06d6a4ededc7c7.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 22,
+          "iconPathMenu": "A_201802_06_5e2d0693f1614c848cd2abaa24ac7ae2.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/gb",
+          "menuItemId": "5b8decdfbab09c64112fd5ac",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "退款",
+          "referenceApiname": "RefundObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_c62158c970c44482a12aec51c3d58244.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 23,
+          "iconPathMenu": "A_201802_06_48487e634803453f88c1f073c8b0fd78.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/opeflow",
+          "menuItemId": "5b8decdfbab09c64112fd5ad",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "业务流程实例",
+          "referenceApiname": "BpmInstance",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_08_6bb5c4c11b2241979a69694216cb245f.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 24,
+          "iconPathMenu": "A_201802_08_2a9be3b5029d42fc9056ed74f2e5ebfb.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/service",
+          "menuItemId": "5b8decdfbab09c64112fd5ae",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "服务管理",
+          "referenceApiname": "CrmServiceManager",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 25,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/rival",
+          "menuItemId": "5b8decdfbab09c64112fd5b0",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "竞争对手",
+          "referenceApiname": "CrmRival",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 27,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/visit",
+          "menuItemId": "5b8decdfbab09c64112fd5b1",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "拜访",
+          "referenceApiname": "VisitingObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5563c92a17a74b0c9f40b1fb111fffbc.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 28,
+          "iconPathMenu": "A_201802_06_58e77dd664a044b68f59dd954e8a096a.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decdfbab09c64112fd5b2",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 29,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decdfbab09c64112fd5b3",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "displayName": "自定义对象(示例)",
+          "referenceApiname": "object_OMeiv__c",
+          "iconIndex": 0,
+          "iconPathHome": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 30,
+          "iconPathMenu": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png"
+        },
+        {
+          "id": "5b8ded7abab09c64112fe397",
+          "type": "group",
+          "menuId": "5b8decdfbab09c64112fd567",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 0
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b8decaebab09c64112fd1f8",
+      "displayName": "123456789",
+      "items": [
+        {
+          "type": "menu",
+          "menuItemId": "5b8decaebab09c64112fd224",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "CRM提醒",
+          "referenceApiname": "CrmRemind",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 1,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/info",
+          "menuItemId": "5b8decaebab09c64112fd225",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "销售记录",
+          "referenceApiname": "CrmInfo",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_2ffeccc3d8f848d7bdc966322670d4f6.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 2,
+          "iconPathMenu": "A_201802_06_756b1d8dd13a48c5b64fd8015a69ebe6.png"
+        },
+        {
+          "type": "menu",
+          "url": "bi/list",
+          "menuItemId": "5b8decaebab09c64112fd227",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "报表",
+          "referenceApiname": "Report",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 4,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/market",
+          "menuItemId": "5b8decaebab09c64112fd229",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "市场活动",
+          "referenceApiname": "MarketingEventObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5223d4e9bbc0440cbe882d59b1f7c0b2.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 6,
+          "iconPathMenu": "A_201802_06_4071e0d756ac41dfaf781f1fbc569dd7.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/clue",
+          "menuItemId": "5b8decaebab09c64112fd22a",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "销售线索",
+          "referenceApiname": "LeadsObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_601937b9774d4f52878a74340fd39b07.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 7,
+          "iconPathMenu": "A_201802_06_7324c7f5268246debce84d085de16314.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/cluepool",
+          "menuItemId": "5b8decaebab09c64112fd22b",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "线索池",
+          "referenceApiname": "LeadsPoolObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b4ac413cb2394f659d01c204cd4d6aae.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 8,
+          "iconPathMenu": "A_201802_06_8e9b105058b6416fa823293e10404093.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/customer",
+          "menuItemId": "5b8decaebab09c64112fd22c",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "客户",
+          "referenceApiname": "AccountObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_274cb25dac6849eb89125740cd7c0ff9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 9,
+          "iconPathMenu": "A_201802_06_f2ac5e08fe3d4a0995f2fb021787582a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/highseas",
+          "menuItemId": "5b8decaebab09c64112fd22d",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "公海",
+          "referenceApiname": "HighSeasObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_f21517b8060c465c92ae0fd733080b86.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 10,
+          "iconPathMenu": "A_201802_06_6846030421f34d60825507c297f57067.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b8decaebab09c64112fd22e",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "联系人",
+          "referenceApiname": "ContactObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_8ba8265450264fa9abb30d1eed5d35c9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 11,
+          "iconPathMenu": "A_201802_06_7cd8d54000344e758b0e185a9f26778f.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b8decaebab09c64112fd230",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "商机",
+          "referenceApiname": "OpportunityObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_1e223aae4de043aebf608a95b2d43853.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 13,
+          "iconPathMenu": "A_201802_06_9be0d2e66d5f41ccae721990c1203272.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decaebab09c64112fd231",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "报价单",
+          "referenceApiname": "QuoteObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_2a41a1d684ab47d097e737aad03c706f.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 14,
+          "iconPathMenu": "A_201802_06_10967e252ed849c487c6ac13182b62cd.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decaebab09c64112fd232",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "报价单明细",
+          "referenceApiname": "QuoteLinesObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_d9c9b4538fb04c44970e7e878cc5ada6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 15,
+          "iconPathMenu": "A_201802_06_31dcf9a6efe24589b6ccbc46228ec22a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contract",
+          "menuItemId": "5b8decaebab09c64112fd233",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "合同",
+          "referenceApiname": "ContractObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_bb2f11f55820417997df6f6465929a68.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 16,
+          "iconPathMenu": "A_201802_06_88d72a86d8894dba997f7821173c6794.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/numberform",
+          "menuItemId": "5b8decaebab09c64112fd234",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "销售订单",
+          "referenceApiname": "SalesOrderObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_17347ec6272d4eca9a1c6ee4273bbdf0.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 17,
+          "iconPathMenu": "A_201802_06_5017a80eaf6b4bc6a6e1160a3629fbb3.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decaebab09c64112fd235",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "回款计划",
+          "referenceApiname": "PaymentPlanObj",
+          "iconPathHome": "A_201802_06_fa9c1b43bdfc425080910c9e865b4eda.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 18,
+          "iconPathMenu": "A_201802_06_496d84a7d1494a7ab92fd600f63b592d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b8decaebab09c64112fd236",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "回款",
+          "referenceApiname": "PaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_025cac2f45d64291b4652e69ce841507.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 19,
+          "iconPathMenu": "A_201802_06_8289109ae4204c16945996d166277660.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b8decaebab09c64112fd237",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "回款明细",
+          "referenceApiname": "OrderPaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201803_26_25626c466eca400a9b176978094b7faf.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 20,
+          "iconPathMenu": "A_201803_26_8e48e1f525d648ceb3f0f2f6e9fbe10a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/invoice",
+          "menuItemId": "5b8decaebab09c64112fd238",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "开票申请",
+          "referenceApiname": "InvoiceApplicationObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_e4e10c5008914273bd7efb6ec7a0fe16.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 21,
+          "iconPathMenu": "A_201802_06_7e5a61c6f8bb44dc8cdb96c3d43c8f22.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/product",
+          "menuItemId": "5b8decaebab09c64112fd239",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "产品",
+          "referenceApiname": "ProductObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5fc4710a48cb490fb0d100a5ba9e41e8.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 22,
+          "iconPathMenu": "A_201802_06_b5631021a76d4ead9902ba23e22488ee.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decaebab09c64112fd23a",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "价目表",
+          "referenceApiname": "PriceBookObj",
+          "iconIndex": 0,
+          "iconPathHome": "A_201802_06_f9e01d7140094a9ebd48e61c1536c1bd.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 23,
+          "iconPathMenu": "A_201802_06_e5e05a43e5c3499a86b8706da64c780d.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decaebab09c64112fd23b",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "价目表明细",
+          "referenceApiname": "PriceBookProductObj",
+          "iconIndex": 16,
+          "iconPathHome": "A_201802_06_07a8c99ac20f4fc999e8f269533358e5.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 24,
+          "iconPathMenu": "A_201802_06_60ff2bc345f54d849670c54657c0048d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/returnnumber",
+          "menuItemId": "5b8decaebab09c64112fd23c",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "退货单",
+          "referenceApiname": "ReturnedGoodsInvoiceObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b0f47fb542af4b568d06d6a4ededc7c7.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 25,
+          "iconPathMenu": "A_201802_06_5e2d0693f1614c848cd2abaa24ac7ae2.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/gb",
+          "menuItemId": "5b8decaebab09c64112fd23d",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "退款",
+          "referenceApiname": "RefundObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_c62158c970c44482a12aec51c3d58244.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 26,
+          "iconPathMenu": "A_201802_06_48487e634803453f88c1f073c8b0fd78.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/opeflow",
+          "menuItemId": "5b8decaebab09c64112fd23e",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "业务流程实例",
+          "referenceApiname": "BpmInstance",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_08_6bb5c4c11b2241979a69694216cb245f.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 27,
+          "iconPathMenu": "A_201802_08_2a9be3b5029d42fc9056ed74f2e5ebfb.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/service",
+          "menuItemId": "5b8decaebab09c64112fd23f",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "服务管理",
+          "referenceApiname": "CrmServiceManager",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 28,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/rival",
+          "menuItemId": "5b8decaebab09c64112fd241",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "竞争对手",
+          "referenceApiname": "CrmRival",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 30,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/visit",
+          "menuItemId": "5b8decaebab09c64112fd242",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "拜访",
+          "referenceApiname": "VisitingObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5563c92a17a74b0c9f40b1fb111fffbc.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 31,
+          "iconPathMenu": "A_201802_06_58e77dd664a044b68f59dd954e8a096a.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decaebab09c64112fd243",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 32,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8decaebab09c64112fd244",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "自定义对象(示例)",
+          "referenceApiname": "object_OMeiv__c",
+          "iconIndex": 0,
+          "iconPathHome": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 33,
+          "iconPathMenu": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png"
+        },
+        {
+          "id": "5b8decaebab09c64112fd208",
+          "type": "group",
+          "menuId": "5b8decaebab09c64112fd1f8",
+          "displayName": "111",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 0
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b8dc33bbab09c0b73e32c47",
+      "displayName": "090411",
+      "items": [
+        {
+          "type": "menu",
+          "menuItemId": "5b8dc33bbab09c0b73e32c72",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "CRM提醒",
+          "referenceApiname": "CrmRemind",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 0,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/info",
+          "menuItemId": "5b8dc33bbab09c0b73e32c74",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "销售记录",
+          "referenceApiname": "CrmInfo",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_2ffeccc3d8f848d7bdc966322670d4f6.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 2,
+          "iconPathMenu": "A_201802_06_756b1d8dd13a48c5b64fd8015a69ebe6.png"
+        },
+        {
+          "type": "menu",
+          "url": "bi/list",
+          "menuItemId": "5b8dc33bbab09c0b73e32c76",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "报表",
+          "referenceApiname": "Report",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 4,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/market",
+          "menuItemId": "5b8dc33bbab09c0b73e32c78",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "市场活动",
+          "referenceApiname": "MarketingEventObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5223d4e9bbc0440cbe882d59b1f7c0b2.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 6,
+          "iconPathMenu": "A_201802_06_4071e0d756ac41dfaf781f1fbc569dd7.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/clue",
+          "menuItemId": "5b8dc33bbab09c0b73e32c79",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "销售线索",
+          "referenceApiname": "LeadsObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_601937b9774d4f52878a74340fd39b07.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 7,
+          "iconPathMenu": "A_201802_06_7324c7f5268246debce84d085de16314.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/cluepool",
+          "menuItemId": "5b8dc33bbab09c0b73e32c7a",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "线索池",
+          "referenceApiname": "LeadsPoolObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b4ac413cb2394f659d01c204cd4d6aae.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 8,
+          "iconPathMenu": "A_201802_06_8e9b105058b6416fa823293e10404093.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/customer",
+          "menuItemId": "5b8dc33bbab09c0b73e32c7b",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "客户",
+          "referenceApiname": "AccountObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_274cb25dac6849eb89125740cd7c0ff9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 9,
+          "iconPathMenu": "A_201802_06_f2ac5e08fe3d4a0995f2fb021787582a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/highseas",
+          "menuItemId": "5b8dc33bbab09c0b73e32c7c",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "公海",
+          "referenceApiname": "HighSeasObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_f21517b8060c465c92ae0fd733080b86.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 10,
+          "iconPathMenu": "A_201802_06_6846030421f34d60825507c297f57067.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b8dc33bbab09c0b73e32c7d",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "联系人",
+          "referenceApiname": "ContactObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_8ba8265450264fa9abb30d1eed5d35c9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 11,
+          "iconPathMenu": "A_201802_06_7cd8d54000344e758b0e185a9f26778f.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b8dc33bbab09c0b73e32c7f",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "商机",
+          "referenceApiname": "OpportunityObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_1e223aae4de043aebf608a95b2d43853.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 13,
+          "iconPathMenu": "A_201802_06_9be0d2e66d5f41ccae721990c1203272.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8dc33bbab09c0b73e32c80",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "报价单",
+          "referenceApiname": "QuoteObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_2a41a1d684ab47d097e737aad03c706f.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 14,
+          "iconPathMenu": "A_201802_06_10967e252ed849c487c6ac13182b62cd.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8dc33bbab09c0b73e32c81",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "报价单明细",
+          "referenceApiname": "QuoteLinesObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_d9c9b4538fb04c44970e7e878cc5ada6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 15,
+          "iconPathMenu": "A_201802_06_31dcf9a6efe24589b6ccbc46228ec22a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contract",
+          "menuItemId": "5b8dc33bbab09c0b73e32c82",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "合同",
+          "referenceApiname": "ContractObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_bb2f11f55820417997df6f6465929a68.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 16,
+          "iconPathMenu": "A_201802_06_88d72a86d8894dba997f7821173c6794.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/numberform",
+          "menuItemId": "5b8dc33bbab09c0b73e32c83",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "销售订单",
+          "referenceApiname": "SalesOrderObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_17347ec6272d4eca9a1c6ee4273bbdf0.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 17,
+          "iconPathMenu": "A_201802_06_5017a80eaf6b4bc6a6e1160a3629fbb3.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8dc33bbab09c0b73e32c84",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "回款计划",
+          "referenceApiname": "PaymentPlanObj",
+          "iconPathHome": "A_201802_06_fa9c1b43bdfc425080910c9e865b4eda.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 18,
+          "iconPathMenu": "A_201802_06_496d84a7d1494a7ab92fd600f63b592d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b8dc33bbab09c0b73e32c85",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "回款",
+          "referenceApiname": "PaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_025cac2f45d64291b4652e69ce841507.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 19,
+          "iconPathMenu": "A_201802_06_8289109ae4204c16945996d166277660.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b8dc33bbab09c0b73e32c86",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "回款明细",
+          "referenceApiname": "OrderPaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201803_26_25626c466eca400a9b176978094b7faf.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 20,
+          "iconPathMenu": "A_201803_26_8e48e1f525d648ceb3f0f2f6e9fbe10a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/invoice",
+          "menuItemId": "5b8dc33bbab09c0b73e32c87",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "开票申请",
+          "referenceApiname": "InvoiceApplicationObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_e4e10c5008914273bd7efb6ec7a0fe16.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 21,
+          "iconPathMenu": "A_201802_06_7e5a61c6f8bb44dc8cdb96c3d43c8f22.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/product",
+          "menuItemId": "5b8dc33bbab09c0b73e32c88",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "产品",
+          "referenceApiname": "ProductObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5fc4710a48cb490fb0d100a5ba9e41e8.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 22,
+          "iconPathMenu": "A_201802_06_b5631021a76d4ead9902ba23e22488ee.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8dc33bbab09c0b73e32c89",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "价目表",
+          "referenceApiname": "PriceBookObj",
+          "iconIndex": 0,
+          "iconPathHome": "A_201802_06_f9e01d7140094a9ebd48e61c1536c1bd.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 23,
+          "iconPathMenu": "A_201802_06_e5e05a43e5c3499a86b8706da64c780d.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8dc33bbab09c0b73e32c8a",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "价目表明细",
+          "referenceApiname": "PriceBookProductObj",
+          "iconIndex": 16,
+          "iconPathHome": "A_201802_06_07a8c99ac20f4fc999e8f269533358e5.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 24,
+          "iconPathMenu": "A_201802_06_60ff2bc345f54d849670c54657c0048d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/returnnumber",
+          "menuItemId": "5b8dc33bbab09c0b73e32c8b",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "退货单",
+          "referenceApiname": "ReturnedGoodsInvoiceObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b0f47fb542af4b568d06d6a4ededc7c7.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 25,
+          "iconPathMenu": "A_201802_06_5e2d0693f1614c848cd2abaa24ac7ae2.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/gb",
+          "menuItemId": "5b8dc33bbab09c0b73e32c8c",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "退款",
+          "referenceApiname": "RefundObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_c62158c970c44482a12aec51c3d58244.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 26,
+          "iconPathMenu": "A_201802_06_48487e634803453f88c1f073c8b0fd78.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/opeflow",
+          "menuItemId": "5b8dc33bbab09c0b73e32c8d",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "业务流程实例",
+          "referenceApiname": "BpmInstance",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_08_6bb5c4c11b2241979a69694216cb245f.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 27,
+          "iconPathMenu": "A_201802_08_2a9be3b5029d42fc9056ed74f2e5ebfb.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/service",
+          "menuItemId": "5b8dc33bbab09c0b73e32c8e",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "服务管理",
+          "referenceApiname": "CrmServiceManager",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 28,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/rival",
+          "menuItemId": "5b8dc33bbab09c0b73e32c90",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "竞争对手",
+          "referenceApiname": "CrmRival",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 30,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/visit",
+          "menuItemId": "5b8dc33bbab09c0b73e32c91",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "拜访",
+          "referenceApiname": "VisitingObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5563c92a17a74b0c9f40b1fb111fffbc.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 31,
+          "iconPathMenu": "A_201802_06_58e77dd664a044b68f59dd954e8a096a.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8dc33bbab09c0b73e32c92",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 32,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8dc33bbab09c0b73e32c93",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "自定义对象(示例)",
+          "referenceApiname": "object_OMeiv__c",
+          "iconIndex": 0,
+          "iconPathHome": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 33,
+          "iconPathMenu": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png"
+        },
+        {
+          "id": "5b8dc33bbab09c0b73e32c57",
+          "type": "group",
+          "menuId": "5b8dc33bbab09c0b73e32c47",
+          "displayName": "111",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 1
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87d11dbab09cd5bb231f77",
+      "displayName": "测试分组名称",
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b8d631bbab09c0b73e32010",
+      "displayName": "erqwer",
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b8d62cdbab09c0b73e31d62",
+      "displayName": "dsafsaf",
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87d18ebab09cd5bb232278",
+      "displayName": "测试分组名称2",
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b8d1a34bab09cee7360327e",
+      "displayName": "测试菜单090319",
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b8d5ddfbab09c0b73e3117a",
+      "displayName": "csxcd",
+      "isSystem": false,
+      "isCurrent": true
+    },
+    {
+      "id": "5b8d5e5dbab09c0b73e3140d",
+      "displayName": "111111111",
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b8ca98cbab09c78f902e23c",
+      "displayName": "菜单09031124",
+      "items": [
+        {
+          "pid": "5b8ca98cbab09c78f902e24c",
+          "type": "menu",
+          "menuItemId": "5b8ca98cbab09c78f902e2a0",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 0,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8ca98cbab09c78f902e281",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "CRM提醒",
+          "referenceApiname": "CrmRemind",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 0,
+          "iconPathMenu": "null"
+        },
+        {
+          "pid": "5b8ca98cbab09c78f902e24c",
+          "type": "menu",
+          "url": "crm/rival",
+          "menuItemId": "5b8ca98cbab09c78f902e2a1",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "竞争对手",
+          "referenceApiname": "CrmRival",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 1,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/info",
+          "menuItemId": "5b8ca98cbab09c78f902e282",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "销售记录",
+          "referenceApiname": "CrmInfo",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_2ffeccc3d8f848d7bdc966322670d4f6.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 1,
+          "iconPathMenu": "A_201802_06_756b1d8dd13a48c5b64fd8015a69ebe6.png"
+        },
+        {
+          "pid": "5b8ca98cbab09c78f902e24c",
+          "type": "menu",
+          "menuItemId": "5b8ca98cbab09c78f902e2a2",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "自定义对象(示例)",
+          "referenceApiname": "object_OMeiv__c",
+          "iconIndex": 0,
+          "iconPathHome": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 2,
+          "iconPathMenu": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png"
+        },
+        {
+          "type": "menu",
+          "url": "bi/list",
+          "menuItemId": "5b8ca98cbab09c78f902e285",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "报表",
+          "referenceApiname": "Report",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 4,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/market",
+          "menuItemId": "5b8ca98cbab09c78f902e287",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "市场活动",
+          "referenceApiname": "MarketingEventObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5223d4e9bbc0440cbe882d59b1f7c0b2.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 6,
+          "iconPathMenu": "A_201802_06_4071e0d756ac41dfaf781f1fbc569dd7.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/clue",
+          "menuItemId": "5b8ca98cbab09c78f902e288",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "销售线索",
+          "referenceApiname": "LeadsObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_601937b9774d4f52878a74340fd39b07.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 7,
+          "iconPathMenu": "A_201802_06_7324c7f5268246debce84d085de16314.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/cluepool",
+          "menuItemId": "5b8ca98cbab09c78f902e289",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "线索池",
+          "referenceApiname": "LeadsPoolObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b4ac413cb2394f659d01c204cd4d6aae.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 8,
+          "iconPathMenu": "A_201802_06_8e9b105058b6416fa823293e10404093.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/customer",
+          "menuItemId": "5b8ca98cbab09c78f902e28a",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "客户",
+          "referenceApiname": "AccountObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_274cb25dac6849eb89125740cd7c0ff9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 9,
+          "iconPathMenu": "A_201802_06_f2ac5e08fe3d4a0995f2fb021787582a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/highseas",
+          "menuItemId": "5b8ca98cbab09c78f902e28b",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "公海",
+          "referenceApiname": "HighSeasObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_f21517b8060c465c92ae0fd733080b86.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 10,
+          "iconPathMenu": "A_201802_06_6846030421f34d60825507c297f57067.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b8ca98cbab09c78f902e28c",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "联系人",
+          "referenceApiname": "ContactObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_8ba8265450264fa9abb30d1eed5d35c9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 11,
+          "iconPathMenu": "A_201802_06_7cd8d54000344e758b0e185a9f26778f.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b8ca98cbab09c78f902e28e",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "商机",
+          "referenceApiname": "OpportunityObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_1e223aae4de043aebf608a95b2d43853.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 13,
+          "iconPathMenu": "A_201802_06_9be0d2e66d5f41ccae721990c1203272.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8ca98cbab09c78f902e28f",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "报价单",
+          "referenceApiname": "QuoteObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_2a41a1d684ab47d097e737aad03c706f.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 14,
+          "iconPathMenu": "A_201802_06_10967e252ed849c487c6ac13182b62cd.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8ca98cbab09c78f902e290",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "报价单明细",
+          "referenceApiname": "QuoteLinesObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_d9c9b4538fb04c44970e7e878cc5ada6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 15,
+          "iconPathMenu": "A_201802_06_31dcf9a6efe24589b6ccbc46228ec22a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contract",
+          "menuItemId": "5b8ca98cbab09c78f902e291",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "合同",
+          "referenceApiname": "ContractObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_bb2f11f55820417997df6f6465929a68.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 16,
+          "iconPathMenu": "A_201802_06_88d72a86d8894dba997f7821173c6794.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/numberform",
+          "menuItemId": "5b8ca98cbab09c78f902e292",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "销售订单",
+          "referenceApiname": "SalesOrderObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_17347ec6272d4eca9a1c6ee4273bbdf0.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 17,
+          "iconPathMenu": "A_201802_06_5017a80eaf6b4bc6a6e1160a3629fbb3.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8ca98cbab09c78f902e293",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "回款计划",
+          "referenceApiname": "PaymentPlanObj",
+          "iconPathHome": "A_201802_06_fa9c1b43bdfc425080910c9e865b4eda.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 18,
+          "iconPathMenu": "A_201802_06_496d84a7d1494a7ab92fd600f63b592d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b8ca98cbab09c78f902e294",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "回款",
+          "referenceApiname": "PaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_025cac2f45d64291b4652e69ce841507.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 19,
+          "iconPathMenu": "A_201802_06_8289109ae4204c16945996d166277660.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b8ca98cbab09c78f902e295",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "回款明细",
+          "referenceApiname": "OrderPaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201803_26_25626c466eca400a9b176978094b7faf.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 20,
+          "iconPathMenu": "A_201803_26_8e48e1f525d648ceb3f0f2f6e9fbe10a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/invoice",
+          "menuItemId": "5b8ca98cbab09c78f902e296",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "开票申请",
+          "referenceApiname": "InvoiceApplicationObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_e4e10c5008914273bd7efb6ec7a0fe16.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 21,
+          "iconPathMenu": "A_201802_06_7e5a61c6f8bb44dc8cdb96c3d43c8f22.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/product",
+          "menuItemId": "5b8ca98cbab09c78f902e297",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "产品",
+          "referenceApiname": "ProductObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5fc4710a48cb490fb0d100a5ba9e41e8.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 22,
+          "iconPathMenu": "A_201802_06_b5631021a76d4ead9902ba23e22488ee.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8ca98cbab09c78f902e298",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "价目表",
+          "referenceApiname": "PriceBookObj",
+          "iconIndex": 0,
+          "iconPathHome": "A_201802_06_f9e01d7140094a9ebd48e61c1536c1bd.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 23,
+          "iconPathMenu": "A_201802_06_e5e05a43e5c3499a86b8706da64c780d.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b8ca98cbab09c78f902e299",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "价目表明细",
+          "referenceApiname": "PriceBookProductObj",
+          "iconIndex": 16,
+          "iconPathHome": "A_201802_06_07a8c99ac20f4fc999e8f269533358e5.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 24,
+          "iconPathMenu": "A_201802_06_60ff2bc345f54d849670c54657c0048d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/returnnumber",
+          "menuItemId": "5b8ca98cbab09c78f902e29a",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "退货单",
+          "referenceApiname": "ReturnedGoodsInvoiceObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b0f47fb542af4b568d06d6a4ededc7c7.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 25,
+          "iconPathMenu": "A_201802_06_5e2d0693f1614c848cd2abaa24ac7ae2.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/gb",
+          "menuItemId": "5b8ca98cbab09c78f902e29b",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "退款",
+          "referenceApiname": "RefundObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_c62158c970c44482a12aec51c3d58244.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 26,
+          "iconPathMenu": "A_201802_06_48487e634803453f88c1f073c8b0fd78.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/opeflow",
+          "menuItemId": "5b8ca98cbab09c78f902e29c",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "业务流程实例",
+          "referenceApiname": "BpmInstance",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_08_6bb5c4c11b2241979a69694216cb245f.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 27,
+          "iconPathMenu": "A_201802_08_2a9be3b5029d42fc9056ed74f2e5ebfb.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/service",
+          "menuItemId": "5b8ca98cbab09c78f902e29d",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "服务管理",
+          "referenceApiname": "CrmServiceManager",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 28,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/visit",
+          "menuItemId": "5b8ca98cbab09c78f902e29f",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "拜访",
+          "referenceApiname": "VisitingObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5563c92a17a74b0c9f40b1fb111fffbc.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 30,
+          "iconPathMenu": "A_201802_06_58e77dd664a044b68f59dd954e8a096a.png"
+        },
+        {
+          "id": "5b8ca98cbab09c78f902e24c",
+          "type": "group",
+          "menuId": "5b8ca98cbab09c78f902e23c",
+          "displayName": "测试分组111",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 31
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87cf7bbab09cd5bb231975",
+      "displayName": "11111新菜单",
+      "items": [
+        {
+          "pid": "5b87cf7bbab09cd5bb231985",
+          "type": "menu",
+          "menuItemId": "5b87cf7bbab09cd5bb2319bf",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 0,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b87cf7bbab09cd5bb2319a0",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "CRM提醒",
+          "referenceApiname": "CrmRemind",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 0,
+          "iconPathMenu": "null"
+        },
+        {
+          "pid": "5b87cf7bbab09cd5bb231985",
+          "type": "menu",
+          "url": "crm/visit",
+          "menuItemId": "5b87cf7bbab09cd5bb2319c0",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "拜访",
+          "referenceApiname": "VisitingObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5563c92a17a74b0c9f40b1fb111fffbc.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 1,
+          "iconPathMenu": "A_201802_06_58e77dd664a044b68f59dd954e8a096a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/info",
+          "menuItemId": "5b87cf7bbab09cd5bb2319a1",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "销售记录",
+          "referenceApiname": "CrmInfo",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_2ffeccc3d8f848d7bdc966322670d4f6.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 1,
+          "iconPathMenu": "A_201802_06_756b1d8dd13a48c5b64fd8015a69ebe6.png"
+        },
+        {
+          "type": "menu",
+          "url": "bi/list",
+          "menuItemId": "5b87cf7bbab09cd5bb2319a3",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "报表",
+          "referenceApiname": "Report",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 3,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/market",
+          "menuItemId": "5b87cf7bbab09cd5bb2319a5",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "市场活动",
+          "referenceApiname": "MarketingEventObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5223d4e9bbc0440cbe882d59b1f7c0b2.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 5,
+          "iconPathMenu": "A_201802_06_4071e0d756ac41dfaf781f1fbc569dd7.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/clue",
+          "menuItemId": "5b87cf7bbab09cd5bb2319a6",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "销售线索",
+          "referenceApiname": "LeadsObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_601937b9774d4f52878a74340fd39b07.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 6,
+          "iconPathMenu": "A_201802_06_7324c7f5268246debce84d085de16314.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/cluepool",
+          "menuItemId": "5b87cf7bbab09cd5bb2319a7",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "线索池",
+          "referenceApiname": "LeadsPoolObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b4ac413cb2394f659d01c204cd4d6aae.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 7,
+          "iconPathMenu": "A_201802_06_8e9b105058b6416fa823293e10404093.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/customer",
+          "menuItemId": "5b87cf7bbab09cd5bb2319a8",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "客户",
+          "referenceApiname": "AccountObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_274cb25dac6849eb89125740cd7c0ff9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 8,
+          "iconPathMenu": "A_201802_06_f2ac5e08fe3d4a0995f2fb021787582a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/highseas",
+          "menuItemId": "5b87cf7bbab09cd5bb2319a9",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "公海",
+          "referenceApiname": "HighSeasObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_f21517b8060c465c92ae0fd733080b86.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 9,
+          "iconPathMenu": "A_201802_06_6846030421f34d60825507c297f57067.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b87cf7bbab09cd5bb2319aa",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "联系人",
+          "referenceApiname": "ContactObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_8ba8265450264fa9abb30d1eed5d35c9.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 10,
+          "iconPathMenu": "A_201802_06_7cd8d54000344e758b0e185a9f26778f.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contacts",
+          "menuItemId": "5b87cf7bbab09cd5bb2319ac",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "商机",
+          "referenceApiname": "OpportunityObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_1e223aae4de043aebf608a95b2d43853.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 12,
+          "iconPathMenu": "A_201802_06_9be0d2e66d5f41ccae721990c1203272.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b87cf7bbab09cd5bb2319ad",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "报价单",
+          "referenceApiname": "QuoteObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_2a41a1d684ab47d097e737aad03c706f.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 13,
+          "iconPathMenu": "A_201802_06_10967e252ed849c487c6ac13182b62cd.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b87cf7bbab09cd5bb2319ae",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "报价单明细",
+          "referenceApiname": "QuoteLinesObj",
+          "iconIndex": 12,
+          "iconPathHome": "A_201802_06_d9c9b4538fb04c44970e7e878cc5ada6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 14,
+          "iconPathMenu": "A_201802_06_31dcf9a6efe24589b6ccbc46228ec22a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/contract",
+          "menuItemId": "5b87cf7bbab09cd5bb2319af",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "合同",
+          "referenceApiname": "ContractObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_bb2f11f55820417997df6f6465929a68.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 15,
+          "iconPathMenu": "A_201802_06_88d72a86d8894dba997f7821173c6794.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/numberform",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b0",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "销售订单",
+          "referenceApiname": "SalesOrderObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_17347ec6272d4eca9a1c6ee4273bbdf0.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 16,
+          "iconPathMenu": "A_201802_06_5017a80eaf6b4bc6a6e1160a3629fbb3.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b1",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "回款计划",
+          "referenceApiname": "PaymentPlanObj",
+          "iconPathHome": "A_201802_06_fa9c1b43bdfc425080910c9e865b4eda.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 17,
+          "iconPathMenu": "A_201802_06_496d84a7d1494a7ab92fd600f63b592d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b2",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "回款",
+          "referenceApiname": "PaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_025cac2f45d64291b4652e69ce841507.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 18,
+          "iconPathMenu": "A_201802_06_8289109ae4204c16945996d166277660.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/paymentobj",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b3",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "回款明细",
+          "referenceApiname": "OrderPaymentObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201803_26_25626c466eca400a9b176978094b7faf.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 19,
+          "iconPathMenu": "A_201803_26_8e48e1f525d648ceb3f0f2f6e9fbe10a.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/invoice",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b4",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "开票申请",
+          "referenceApiname": "InvoiceApplicationObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_e4e10c5008914273bd7efb6ec7a0fe16.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 20,
+          "iconPathMenu": "A_201802_06_7e5a61c6f8bb44dc8cdb96c3d43c8f22.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/product",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b5",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "产品",
+          "referenceApiname": "ProductObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5fc4710a48cb490fb0d100a5ba9e41e8.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 21,
+          "iconPathMenu": "A_201802_06_b5631021a76d4ead9902ba23e22488ee.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b6",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "价目表",
+          "referenceApiname": "PriceBookObj",
+          "iconIndex": 0,
+          "iconPathHome": "A_201802_06_f9e01d7140094a9ebd48e61c1536c1bd.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 22,
+          "iconPathMenu": "A_201802_06_e5e05a43e5c3499a86b8706da64c780d.png"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b7",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "价目表明细",
+          "referenceApiname": "PriceBookProductObj",
+          "iconIndex": 16,
+          "iconPathHome": "A_201802_06_07a8c99ac20f4fc999e8f269533358e5.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 23,
+          "iconPathMenu": "A_201802_06_60ff2bc345f54d849670c54657c0048d.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/returnnumber",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b8",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "退货单",
+          "referenceApiname": "ReturnedGoodsInvoiceObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_b0f47fb542af4b568d06d6a4ededc7c7.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 24,
+          "iconPathMenu": "A_201802_06_5e2d0693f1614c848cd2abaa24ac7ae2.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/gb",
+          "menuItemId": "5b87cf7bbab09cd5bb2319b9",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "退款",
+          "referenceApiname": "RefundObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_c62158c970c44482a12aec51c3d58244.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 25,
+          "iconPathMenu": "A_201802_06_48487e634803453f88c1f073c8b0fd78.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/opeflow",
+          "menuItemId": "5b87cf7bbab09cd5bb2319ba",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "业务流程实例",
+          "referenceApiname": "BpmInstance",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_08_6bb5c4c11b2241979a69694216cb245f.png",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 26,
+          "iconPathMenu": "A_201802_08_2a9be3b5029d42fc9056ed74f2e5ebfb.png"
+        },
+        {
+          "type": "menu",
+          "url": "crm/service",
+          "menuItemId": "5b87cf7bbab09cd5bb2319bb",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "服务管理",
+          "referenceApiname": "CrmServiceManager",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 27,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "url": "crm/rival",
+          "menuItemId": "5b87cf7bbab09cd5bb2319bd",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "竞争对手",
+          "referenceApiname": "CrmRival",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 29,
+          "iconPathMenu": "null"
+        },
+        {
+          "type": "menu",
+          "menuItemId": "5b87cf7bbab09cd5bb2319be",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "displayName": "自定义对象(示例)",
+          "referenceApiname": "object_OMeiv__c",
+          "iconIndex": 0,
+          "iconPathHome": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 30,
+          "iconPathMenu": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png"
+        },
+        {
+          "id": "5b87cf7bbab09cd5bb231985",
+          "type": "group",
+          "menuId": "5b87cf7bbab09cd5bb231975",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 31
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87cae0bab09cd5bb23035c",
+      "displayName": "saff",
+      "items": [
+        {
+          "pid": "5b87cae0bab09cd5bb23038b",
+          "type": "menu",
+          "url": "crm/visit",
+          "menuItemId": "5b87cae0bab09cd5bb2303a7",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "displayName": "拜访",
+          "referenceApiname": "VisitingObj",
+          "iconIndex": 15,
+          "iconPathHome": "A_201802_06_5563c92a17a74b0c9f40b1fb111fffbc.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 1,
+          "iconPathMenu": "A_201802_06_58e77dd664a044b68f59dd954e8a096a.png"
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23036c",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 0
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23036d",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 1
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23036e",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 2
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23036f",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 3
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230370",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 4
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230371",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 5
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230372",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 6
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230373",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 7
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230374",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 8
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230375",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 9
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230376",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 10
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230377",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 11
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230378",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 12
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230379",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 13
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23037a",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 14
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23037b",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 15
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23037c",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 16
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23037d",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 17
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23037e",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 18
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23037f",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 19
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230380",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 20
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230381",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 21
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230382",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 22
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230383",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 23
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230384",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 24
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230385",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 25
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230386",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 26
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230387",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 27
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230388",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 28
+        },
+        {
+          "id": "5b87cae0bab09cd5bb230389",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 29
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23038a",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 30
+        },
+        {
+          "id": "5b87cae0bab09cd5bb23038b",
+          "type": "group",
+          "menuId": "5b87cae0bab09cd5bb23035c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 31
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87ca86bab09cd5bb230129",
+      "displayName": "fasfaf",
+      "items": [
+        {
+          "pid": "5b87ca86bab09cd5bb230159",
+          "type": "menu",
+          "menuItemId": "5b87ca87bab09cd5bb230174",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 0,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230139",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 0
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23013a",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 1
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23013b",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 2
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23013c",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 3
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23013d",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 4
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23013e",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 5
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23013f",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 6
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230140",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 7
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230141",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 8
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230142",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 9
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230143",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 10
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230144",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 11
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230145",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 12
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230146",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 13
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230147",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 14
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230148",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 15
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230149",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 16
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23014a",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 17
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23014b",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 18
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23014c",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 19
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23014d",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 20
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23014e",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 21
+        },
+        {
+          "id": "5b87ca86bab09cd5bb23014f",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 22
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230150",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 23
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230151",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 24
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230152",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 25
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230153",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 26
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230154",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 27
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230155",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 28
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230156",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 29
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230157",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 30
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230158",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 31
+        },
+        {
+          "id": "5b87ca86bab09cd5bb230159",
+          "type": "group",
+          "menuId": "5b87ca86bab09cd5bb230129",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 32
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87ca5cbab09cd5bb22ff10",
+      "displayName": "fasf",
+      "items": [
+        {
+          "pid": "5b87ca5cbab09cd5bb22ff3f",
+          "type": "menu",
+          "menuItemId": "5b87ca5cbab09cd5bb22ff5a",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 0,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "pid": "5b87ca5cbab09cd5bb22ff3f",
+          "type": "menu",
+          "menuItemId": "5b87ca5cbab09cd5bb22ff5b",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "displayName": "自定义对象(示例)",
+          "referenceApiname": "object_OMeiv__c",
+          "iconIndex": 0,
+          "iconPathHome": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 1,
+          "iconPathMenu": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png"
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff20",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 0
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff21",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 1
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff22",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 2
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff23",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 3
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff24",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 4
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff25",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 5
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff26",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 6
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff27",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 7
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff28",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 8
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff29",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 9
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff2a",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 10
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff2b",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 11
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff2c",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 12
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff2d",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 13
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff2e",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 14
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff2f",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 15
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff30",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 16
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff31",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 17
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff32",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 18
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff33",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 19
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff34",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 20
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff35",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 21
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff36",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 22
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff37",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 23
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff38",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 24
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff39",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 25
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff3a",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 26
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff3b",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 27
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff3c",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 28
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff3d",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 29
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff3e",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 30
+        },
+        {
+          "id": "5b87ca5cbab09cd5bb22ff3f",
+          "type": "group",
+          "menuId": "5b87ca5cbab09cd5bb22ff10",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 31
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87c9ffbab09cd5bb22fd2d",
+      "displayName": "dfsgdfgsdg",
+      "items": [
+        {
+          "pid": "5b87c9ffbab09cd5bb22fd5c",
+          "type": "menu",
+          "menuItemId": "5b87c9ffbab09cd5bb22fd77",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 0,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "pid": "5b87c9ffbab09cd5bb22fd5c",
+          "type": "menu",
+          "menuItemId": "5b87c9ffbab09cd5bb22fd78",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "displayName": "自定义对象(示例)",
+          "referenceApiname": "object_OMeiv__c",
+          "iconIndex": 0,
+          "iconPathHome": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 1,
+          "iconPathMenu": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png"
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd3d",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 0
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd3e",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 1
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd3f",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 2
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd40",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 3
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd41",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 4
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd42",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 5
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd43",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 6
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd44",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 7
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd45",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 8
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd46",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 9
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd47",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 10
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd48",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 11
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd49",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 12
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd4a",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 13
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd4b",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 14
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd4c",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 15
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd4d",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 16
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd4e",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 17
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd4f",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 18
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd50",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 19
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd51",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 20
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd52",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 21
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd53",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 22
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd54",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 23
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd55",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 24
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd56",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 25
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd57",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 26
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd58",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 27
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd59",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 28
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd5a",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 29
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd5b",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 30
+        },
+        {
+          "id": "5b87c9ffbab09cd5bb22fd5c",
+          "type": "group",
+          "menuId": "5b87c9ffbab09cd5bb22fd2d",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 31
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87c8f8bab09cd5bb22fa48",
+      "displayName": "qrqwr",
+      "items": [
+        {
+          "pid": "5b87c8f8bab09cd5bb22fa77",
+          "type": "menu",
+          "menuItemId": "5b87c8f8bab09cd5bb22fa92",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 0,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "pid": "5b87c8f8bab09cd5bb22fa77",
+          "type": "menu",
+          "menuItemId": "5b87c8f8bab09cd5bb22fa93",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "displayName": "自定义对象(示例)",
+          "referenceApiname": "object_OMeiv__c",
+          "iconIndex": 0,
+          "iconPathHome": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 1,
+          "iconPathMenu": "A_201705_10_d100aba35e484ac08bc4dc5bc92e61c6.png"
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa58",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 0
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa59",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 1
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa5a",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 2
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa5b",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 3
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa5c",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 4
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa5d",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 5
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa5e",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 6
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa5f",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 7
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa60",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 8
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa61",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 9
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa62",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 10
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa63",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 11
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa64",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 12
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa65",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 13
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa66",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 14
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa67",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 15
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa68",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 16
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa69",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 17
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa6a",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 18
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa6b",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 19
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa6c",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 20
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa6d",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 21
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa6e",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 22
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa6f",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 23
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa70",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 24
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa71",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 25
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa72",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 26
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa73",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 27
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa74",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 28
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa75",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 29
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa76",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 30
+        },
+        {
+          "id": "5b87c8f8bab09cd5bb22fa77",
+          "type": "group",
+          "menuId": "5b87c8f8bab09cd5bb22fa48",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 31
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87c843bab09cd5bb22f863",
+      "displayName": "rqwr",
+      "items": [
+        {
+          "pid": "5b87c843bab09cd5bb22f892",
+          "type": "menu",
+          "url": "crm/rival",
+          "menuItemId": "5b87c843bab09cd5bb22f8ad",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "displayName": "竞争对手",
+          "referenceApiname": "CrmRival",
+          "iconIndex": 15,
+          "iconPathHome": "null",
+          "privilegeAction": [
+            "List"
+          ],
+          "number": 0,
+          "iconPathMenu": "null"
+        },
+        {
+          "pid": "5b87c843bab09cd5bb22f892",
+          "type": "menu",
+          "menuItemId": "5b87c843bab09cd5bb22f8ae",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 1,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f873",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 0
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f874",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 1
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f875",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 2
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f876",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 3
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f877",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 4
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f878",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 5
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f879",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 6
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f87a",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 7
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f87b",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 8
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f87c",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 9
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f87d",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 10
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f87e",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 11
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f87f",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 12
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f880",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 13
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f881",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 14
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f882",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 15
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f883",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 16
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f884",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 17
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f885",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 18
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f886",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 19
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f887",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 20
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f888",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 21
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f889",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 22
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f88a",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 23
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f88b",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 24
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f88c",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 25
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f88d",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 26
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f88e",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 27
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f88f",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 28
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f890",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 29
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f891",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 30
+        },
+        {
+          "id": "5b87c843bab09cd5bb22f892",
+          "type": "group",
+          "menuId": "5b87c843bab09cd5bb22f863",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 31
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
+    },
+    {
+      "id": "5b87c2c5bab09cd5bb22e93c",
+      "displayName": "1234",
+      "items": [
+        {
+          "pid": "5b87c2c5bab09cd5bb22e96c",
+          "type": "menu",
+          "menuItemId": "5b87c2c5bab09cd5bb22e987",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "displayName": "自定义对象(示例)222",
+          "referenceApiname": "object_STy9d__c",
+          "iconIndex": 2,
+          "iconPathHome": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png",
+          "privilegeAction": [
+            "List",
+            "Add"
+          ],
+          "number": 0,
+          "iconPathMenu": "A_201705_10_f9606d7e776348d0a0eee9a008324b25.png"
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e94c",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 0
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e94d",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 1
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e94e",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 2
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e94f",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 3
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e950",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 4
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e951",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 5
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e952",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 6
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e953",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 7
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e954",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 8
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e955",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 9
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e956",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 10
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e957",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 11
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e958",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 12
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e959",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 13
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e95a",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 14
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e95b",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 15
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e95c",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 16
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e95d",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 17
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e95e",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 18
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e95f",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 19
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e960",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 20
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e961",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 21
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e962",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 22
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e963",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 23
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e964",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 24
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e965",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 25
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e966",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 26
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e967",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 27
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e968",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 28
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e969",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 29
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e96a",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 30
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e96b",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 31
+        },
+        {
+          "id": "5b87c2c5bab09cd5bb22e96c",
+          "type": "group",
+          "menuId": "5b87c2c5bab09cd5bb22e93c",
+          "privilegeAction": [],
+          "isHidden": false,
+          "number": 32
+        }
+      ],
+      "isSystem": false,
+      "isCurrent": false
     }
-  },
-
-  "required":["name", "versions"]
+  ],
+  "configinfo": {
+    "HighSeasList": [],
+    "SalesCluePoolShortInfoList": [],
+    "IsShowServiceManage": 1,
+    "MarketingEventCount": 0,
+    "CompetitorCount": 0,
+    "FunctionRights": [
+      {
+        "FunctionNo": 11007,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 11006,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 18003,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 18001,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 4010,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 4014,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 4009,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 15003,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 15005,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 15001,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 5038,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 5001,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 5016,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 5003,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 5037,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 3008,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 21019,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 21011,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 10001,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 10003,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 9004,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 9008,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 9005,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 16003,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 16005,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 16001,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 8007,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 8006,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 19003,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 19001,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 2005,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 2013,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 2004,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 1005,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 6014,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 6009,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 6015,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 6008,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 6013,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 20003,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 20010,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 20001,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 20019,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 24002,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 24003,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 24004,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 24005,
+        "Right": 1
+      },
+      {
+        "FunctionNo": 27001,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 28001,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 29001,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 29002,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 30001,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 30002,
+        "Right": 0
+      },
+      {
+        "FunctionNo": 31001,
+        "Right": 0
+      }
+    ],
+    "IsCRMManager": true,
+    "CRMVersion": 5,
+    "UserDefinedObjectsJson": null,
+    "IsDingHuoTongEnabled": false,
+    "IsFastSellingEnabled": false,
+    "IsCustomerAccountEnabled": false,
+    "IsGoalRuleEnabled": true,
+    "IsOpenNewOpportunity": false,
+    "IsShowDuplicateSearch": true,
+    "IsOpenPartner": false
+  }
 }
