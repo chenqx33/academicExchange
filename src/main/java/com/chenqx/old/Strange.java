@@ -6,14 +6,14 @@ package com.chenqx.old;
  */
 public class Strange {
     public static void main(String[] args) {
-        String s = "1";
-        System.out.println(s == "1");
+        Object helo = helo();
+        String[] s = new String[]{"f", "m"};
+        System.out.println(helo(s));
+    }
 
-        System.out.println('5' + 3);
-        System.out.println('5' - 3);
+    public static String helo(String... str) {
+        System.out.println(str==null);
+        return str[1];
 
-
-        System.out.println(1 + -+ + - +-+-1);
-        System.out.println(1 + +-+ +-+- - -1);
     }
 }
