@@ -72,6 +72,6 @@ public class CacheManagerImpl implements ICacheManager {
 
     @Override
     public Set<String> getAllKeys() {
-        return null;
+        return caches.keySet();
     }
 }
