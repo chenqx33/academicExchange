@@ -1,6 +1,5 @@
 package com.chenqx;
 
-import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
@@ -10,7 +9,8 @@ import com.chenqx.pojo.Book;
 import com.chenqx.pojo.MenuItemConfigObject;
 import com.chenqx.pojo.MyImpl;
 import com.chenqx.pojo.MyIntegerface;
-import com.chenqx.pojo.algorithm.MinStack3;
+import com.chenqx.pojo.hha;
+import com.chenqx.pojo.hhaa;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.fge.jackson.JsonLoader;
 import com.github.fge.jsonschema.core.report.ProcessingReport;
@@ -29,11 +29,14 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -285,5 +288,65 @@ public class TestTest {
 
     }
 
+    @Test
+    public void s(){
+        hha h = new hha();
+        System.out.println(h.getA());
+        hhaa.setH("22");
+        System.out.println(h.getA());
+        System.out.println(hhaa.h);
+    }
+
+    @Test
+    public void hssss(){
+        Long s = null;
+//        System.out.println(new Date().after(new Date(s)));
+        new Date(s);
+    }
+
+    @Test
+    public void nulltest(){
+        Integer i = null;
+        System.out.println(i<1);
+    }
+
+    @Test
+    public void sns(){
+        String s = "45646[]fs[][][fd]]";
+        Boolean b = s.matches("(\\[[^\\[]+])$");
+        String s1 = s.replaceAll("(\\[[^\\[]+])$", "");
+        System.out.println("[s]".matches("(\\[[^\\[]+])$"));
+        System.out.println(s1);
+        System.out.println(b);
+
+    }
+
+    public static int a;
+    public static String s;
+    public static boolean b;
+    public static char c;
+
+    @Test
+    public void testStatic(){
+        System.out.println(++a);
+        System.out.println(s+"d");
+        System.out.println(++c);
+        System.out.println(b);
+    }
+
+    @Test
+    public void ssvss() throws IOException {
+        Map<String,String> map = new LinkedHashMap<>();
+        map.put("one","1");
+        map.put("two","2");
+        map.put("three","3");
+        map.put("four","4");
+        System.out.println(map.values());
+
+    }
+    @Test
+    public void sss(){
+        System.out.println("+()");
+    }
 
 }

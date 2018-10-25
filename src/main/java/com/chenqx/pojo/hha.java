@@ -3,15 +3,10 @@ package com.chenqx.pojo;
 import lombok.Data;
 
 
-public enum hha {
-    EQ(1),
-    GT(2),
-    LT(3),
-    GTE(4),
-    LTE(5);
-    private int value;
+public class hha {
+    public String a = hhaa.h;
 
-    hha(int value) {
-        this.value = value;
+    public String getA() {
+        return a;
     }
 }

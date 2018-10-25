@@ -1,73 +1,17 @@
 {
   "fields": {
-    "order": {
-      "describe_api_name": "SpecificationValueObj",
-      "default_is_expression": false,
-      "is_unique": false,
-      "type": "number",
-      "decimal_places": 0,
-      "default_to_zero": true,
-      "is_required": false,
-      "define_type": "system",
-      "is_single": false,
-      "max_length": 14,
-      "is_index": true,
-      "is_active": true,
-      "length": 14,
-      "default_value": "",
-      "label": "排序",
-      "api_name": "SpecificationValueObj",
-      "is_index_field": false,
-      "config": {
-        "add": 1,
-        "edit": 1,
-        "enable": 1,
-        "display": 1,
-        "remove": 1,
-        "attrs": {
-          "api_name": 1,
-          "is_unique": 1,
-          "default_value": 1,
-          "label": 1,
-          "help_text": 1,
-          "max_length": 1,
-          "decimal_places": 1
-        }
-      },
-      "round_mode": 4,
-      "help_text": "",
-      "status": "new"
-    },
-    "specification_id": {
-      "is_index": true,
-      "is_active": true,
-      "is_unique": false,
-      "label": "规格",
-      "target_api_name": "SpecificationObj",
-      "type": "master_detail",
-      "target_related_list_name": "target_related_list_specificationvalue",
-      "target_related_list_label": "规格值",
-      "is_required": true,
-      "api_name": "specification_id",
-      "define_type": "package",
-      "is_create_when_master_create": false,
-      "is_required_when_master_create": false,
-      "help_text": "",
-      "status": "released",
-      "is_extend": false
-    },
     "name": {
       "default_is_expression": false,
       "is_index": false,
       "is_active": false,
       "pattern": "",
       "description": "name",
-      "is_unique": true,
+      "is_unique": false,
       "default_value": "",
       "label": "主属性",
       "type": "text",
       "default_to_zero": false,
-      "is_required": true,
+      "is_required": false,
       "api_name": "name",
       "define_type": "system",
       "help_text": "",
@@ -87,7 +31,7 @@
       "label": "_id",
       "api_name": "_id",
       "description": "_id",
-      "resource_bundle_key": "SpecificationValueObj._id",
+      "resource_bundle_key": "SpecificationObj._id",
       "status": "released",
       "is_extend": false
     },
@@ -103,7 +47,7 @@
       "label": "创建人",
       "api_name": "created_by",
       "description": "created_by",
-      "resource_bundle_key": "SpecificationValueObj.created_by",
+      "resource_bundle_key": "SpecificationObj.created_by",
       "status": "released",
       "is_extend": false
     },
@@ -119,7 +63,7 @@
       "label": "最后修改人",
       "api_name": "last_modified_by",
       "description": "last_modified_by",
-      "resource_bundle_key": "SpecificationValueObj.last_modified_by",
+      "resource_bundle_key": "SpecificationObj.last_modified_by",
       "status": "released",
       "is_extend": false
     },
@@ -135,7 +79,7 @@
       "label": "package",
       "api_name": "package",
       "description": "package",
-      "resource_bundle_key": "SpecificationValueObj.package",
+      "resource_bundle_key": "SpecificationObj.package",
       "status": "released",
       "is_extend": false
     },
@@ -151,7 +95,7 @@
       "label": "tenant_id",
       "api_name": "tenant_id",
       "description": "tenant_id",
-      "resource_bundle_key": "SpecificationValueObj.tenant_id",
+      "resource_bundle_key": "SpecificationObj.tenant_id",
       "status": "released",
       "is_extend": false
     },
@@ -167,7 +111,7 @@
       "label": "object_describe_api_name",
       "api_name": "object_describe_api_name",
       "description": "object_describe_api_name",
-      "resource_bundle_key": "SpecificationValueObj.object_describe_api_name",
+      "resource_bundle_key": "SpecificationObj.object_describe_api_name",
       "status": "released",
       "is_extend": false
     },
@@ -183,7 +127,7 @@
       "label": "object_describe_id",
       "api_name": "object_describe_id",
       "description": "object_describe_id",
-      "resource_bundle_key": "SpecificationValueObj.object_describe_id",
+      "resource_bundle_key": "SpecificationObj.object_describe_id",
       "status": "released",
       "is_extend": false
     },
@@ -200,7 +144,7 @@
       "label": "version",
       "api_name": "version",
       "description": "version",
-      "resource_bundle_key": "SpecificationValueObj.version",
+      "resource_bundle_key": "SpecificationObj.version",
       "status": "released",
       "is_extend": false
     },
@@ -216,7 +160,7 @@
       "label": "创建时间",
       "api_name": "create_time",
       "description": "create_time",
-      "resource_bundle_key": "SpecificationValueObj.create_time",
+      "resource_bundle_key": "SpecificationObj.create_time",
       "status": "released",
       "is_extend": false
     },
@@ -232,7 +176,7 @@
       "label": "最后修改时间",
       "api_name": "last_modified_time",
       "description": "last_modified_time",
-      "resource_bundle_key": "SpecificationValueObj.last_modified_time",
+      "resource_bundle_key": "SpecificationObj.last_modified_time",
       "status": "released",
       "is_extend": false
     },
@@ -247,7 +191,7 @@
       "api_name": "is_deleted",
       "description": "is_deleted",
       "default_value": false,
-      "resource_bundle_key": "SpecificationValueObj.is_deleted",
+      "resource_bundle_key": "SpecificationObj.is_deleted",
       "status": "released",
       "is_extend": false
     },
@@ -476,7 +420,7 @@
       }
     },
     "relevant_team": {
-      "describe_api_name": "SpecificationValueObj",
+      "describe_api_name": "SpecificationObj",
       "embedded_fields": {
         "teamMemberEmployee": {
           "is_index": true,
@@ -551,7 +495,7 @@
       "status": "new"
     },
     "record_type": {
-      "describe_api_name": "SpecificationValueObj",
+      "describe_api_name": "SpecificationObj",
       "is_index": true,
       "is_active": true,
       "description": "record_type",
@@ -591,12 +535,12 @@
   "triggers": {},
   "actions": {},
   "index_version": 1,
-  "api_name": "SpecificationValueObj",
-  "display_name": "规格值",
+  "api_name": "SpecificationObj",
+  "display_name": "常用的对象",
   "package": "CRM",
   "define_type": "package",
   "is_active": true,
   "icon_index": 0,
-  "store_table_name": "specification_value",
+  "store_table_name": "specification",
   "is_deleted": false
 }
