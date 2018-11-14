@@ -1,7 +1,9 @@
 package com.chenqx;
 
+
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -16,6 +18,7 @@ import com.github.fge.jackson.JsonLoader;
 import com.github.fge.jsonschema.core.report.ProcessingReport;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
 
+import org.apache.commons.io.IOUtils;
 import org.junit.Test;
 
 
@@ -25,10 +28,12 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -38,6 +43,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.concurrent.CountDownLatch;
 import java.util.stream.Collectors;
 
 /**
@@ -101,9 +107,9 @@ public class TestTest {
 
     @Test
     public void ccc() {
-        Map<String, Boolean> map = Maps.newHashMap();
-        map.put("2", true);
-        System.out.println(map.values().contains(true));
+//        Map<String, Boolean> map = Maps.newHashMap();
+//        map.put("2", true);
+//        System.out.println(map.values().contains(true));
     }
 
     @Test
@@ -233,14 +239,15 @@ public class TestTest {
         System.out.println(o);
 
     }
+
     @Test
-    public void ssss(){
+    public void ssss() {
         List<String> list = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         list.add("list");
         list.add("list ");
         list2.add("list2");
-        list.addAll(0,list2);
+        list.addAll(0, list2);
         System.out.println(list);
 
 
@@ -248,20 +255,8 @@ public class TestTest {
 
     @Test
     public void vvvv() throws IOException {
-        File icon = new File("C:\\Users\\nigul\\IdeaProjects\\academicExchange\\src\\main\\resources\\iconPath.json");
-        File config = new File("C:\\Users\\nigul\\IdeaProjects\\academicExchange\\src\\main\\resources\\menuItemConfig.json");
-
-        StringBuilder sb = new StringBuilder();
-        String iconString;
-        String menuConfig;
-        FileReader reader = new FileReader(icon);
-        FileReader reader1 = new FileReader(config);
-        BufferedReader bReader = new BufferedReader(reader);
-        BufferedReader bReader1 = new BufferedReader(reader1);
-
-
-        iconString = bReader.readLine();
-        menuConfig = bReader1.readLine();
+        String iconString = IOUtils.toString(getClass().getClassLoader().getResource("iconPath.json"), "UTF-8");;
+        String menuConfig = IOUtils.toString(getClass().getClassLoader().getResource("menuItemConfig.json"), "UTF-8");
 
         List<MenuItemConfigObject> menuItemConfigObjects = JSON.parseArray(menuConfig, MenuItemConfigObject.class);
         JSONObject jsonObject = JSON.parseObject(iconString);
@@ -278,7 +273,7 @@ public class TestTest {
     }
 
     @Test
-    public void minstack(){
+    public void minstack() {
         String clientInfo = "Android.100632000";
         if (clientInfo.length() < "635000".length()) {
             System.out.println(true);
@@ -289,7 +284,7 @@ public class TestTest {
     }
 
     @Test
-    public void s(){
+    public void s() {
         hha h = new hha();
         System.out.println(h.getA());
         hhaa.setH("22");
@@ -298,20 +293,20 @@ public class TestTest {
     }
 
     @Test
-    public void hssss(){
+    public void hssss() {
         Long s = null;
 //        System.out.println(new Date().after(new Date(s)));
         new Date(s);
     }
 
     @Test
-    public void nulltest(){
+    public void nulltest() {
         Integer i = null;
-        System.out.println(i<1);
+        System.out.println(i < 1);
     }
 
     @Test
-    public void sns(){
+    public void sns() {
         String s = "45646[]fs[][][fd]]";
         Boolean b = s.matches("(\\[[^\\[]+])$");
         String s1 = s.replaceAll("(\\[[^\\[]+])$", "");
@@ -327,26 +322,92 @@ public class TestTest {
     public static char c;
 
     @Test
-    public void testStatic(){
+    public void testStatic() {
         System.out.println(++a);
-        System.out.println(s+"d");
+        System.out.println(s + "d");
         System.out.println(++c);
         System.out.println(b);
     }
 
     @Test
     public void ssvss() throws IOException {
-        Map<String,String> map = new LinkedHashMap<>();
-        map.put("one","1");
-        map.put("two","2");
-        map.put("three","3");
-        map.put("four","4");
+        Map<String, String> map = new LinkedHashMap<>();
+        map.put("one", "1");
+        map.put("two", "2");
+        map.put("three", "3");
+        map.put("four", "4");
         System.out.println(map.values());
 
     }
+
     @Test
-    public void sss(){
+    public void sss() {
         System.out.println("+()");
+    }
+
+    @Test
+    public void big() {
+        System.out.println(MessageFormat.format("12{0}12{1}","h","j"));
+    }
+
+    @Test
+    public void countDownLatchTest() {
+        final CountDownLatch latch = new CountDownLatch(2);
+
+        new Thread(()->{
+            System.out.println("子线程"+Thread.currentThread().getName()+"正在执行");
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("子线程"+Thread.currentThread().getName()+"执行完毕");
+            latch.countDown();
+        }).start();
+
+        new Thread(()->{
+            System.out.println("子线程"+Thread.currentThread().getName()+"正在执行");
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("子线程"+Thread.currentThread().getName()+"执行完毕");
+            latch.countDown();
+        }).start();
+
+        try {
+            System.out.println("等待2个子线程执行完毕...");
+            latch.await();
+            System.out.println("2个子线程已经执行完毕");
+            System.out.println("继续执行主线程");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void getCep(){
+        System.out.println((("627104".hashCode() % 1024) / 64 + 1));
+    }
+    @Test
+    public void hsdfs(){
+        Map<String, Object> map = Maps.newHashMap();
+        map.put("field_name", "name");
+        map.put("is_readonly", true);
+        map.put("is_required", true);
+        map.put("render_type", "text");
+        Map<String, Object> map2 = Maps.newHashMap();
+        map2.put("field_name1", "name");
+        map2.put("is_readonly", true);
+        map2.put("is_required", true);
+        map2.put("render_type", "text");
+        List<Map> list = Lists.newArrayList(map,map2);
+        List<Map> list2 = Lists.newArrayList(map2);
+        list.removeAll(list2);
+        System.out.println(list.toString());
+
+
     }
 
 }

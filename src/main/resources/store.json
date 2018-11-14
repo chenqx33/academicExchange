@@ -1,0 +1,2749 @@
+{
+  "layout": {
+    "buttons": [
+      {
+        "action_type": "default",
+        "api_name": "Add_button_default",
+        "action": "Add",
+        "label": "新建"
+      },
+      {
+        "action_type": "default",
+        "api_name": "Import_button_default",
+        "action": "Import",
+        "label": "导入"
+      },
+      {
+        "action_type": "default",
+        "api_name": "Export_button_default",
+        "action": "Export",
+        "label": "导出"
+      },
+      {
+        "action_type": "default",
+        "api_name": "IntelligentForm_button_default",
+        "action": "IntelligentForm",
+        "label": "智能表单"
+      }
+    ],
+    "components": [
+      {
+        "field_section": [
+          {
+            "form_fields": [
+              {
+                "is_readonly": true,
+                "is_required": true,
+                "render_type": "text",
+                "field_name": "name"
+              }
+            ],
+            "api_name": "base_field_section__c",
+            "tab_index": "ltr",
+            "column": 2,
+            "header": "基本信息",
+            "is_show": true
+          }
+        ],
+        "buttons": [],
+        "api_name": "form_component",
+        "is_hidden": false,
+        "header": "详细信息",
+        "type": "form",
+        "order": 2
+      }
+    ],
+    "last_modified_time": 1542090906216,
+    "is_deleted": false,
+    "version": 5,
+    "create_time": 1540961200345,
+    "_id": "5bd933b0319d19b3a0af9b7b",
+    "layout_description": "规格默认布局",
+    "api_name": "SpecificationObj_layout_generate_by_UDObjectServer__c",
+    "default_component": "default_component",
+    "config": {
+      "edit": 1,
+      "remove": 0
+    },
+    "top_info": {
+      "type": "simple",
+      "order": 0,
+      "header": "顶部信息",
+      "buttons": [],
+      "api_name": "top_info",
+      "is_hidden": false,
+      "field_section": [
+        {
+          "api_name": "detail",
+          "form_fields": [
+            {
+              "field_name": "owner",
+              "render_type": "employee"
+            },
+            {
+              "field_name": "owner_department",
+              "render_type": "text"
+            },
+            {
+              "field_name": "last_modified_time",
+              "render_type": "date_time"
+            },
+            {
+              "field_name": "record_type",
+              "render_type": "record_type"
+            }
+          ]
+        }
+      ]
+    },
+    "display_name": "默认布局",
+    "is_default": true,
+    "layout_type": "detail",
+    "package": "CRM",
+    "ref_object_api_name": "SpecificationObj",
+    "tenant_id": "74735",
+    "layout_rule": []
+  },
+  "objectDescribe": {
+    "fields": {
+      "data_own_department": {
+        "type": "department",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": false,
+        "is_unique": false,
+        "is_single": true,
+        "api_name": "data_own_department",
+        "status": "released",
+        "label": "归属部门",
+        "is_active": true,
+        "create_time": 1540953692725
+      },
+      "life_status": {
+        "describe_api_name": "SpecificationObj",
+        "is_index": true,
+        "is_active": true,
+        "create_time": 1540962283548,
+        "description": "",
+        "is_unique": false,
+        "default_value": "normal",
+        "label": "生命状态",
+        "type": "select_one",
+        "is_need_convert": false,
+        "is_required": false,
+        "api_name": "life_status",
+        "options": [
+          {
+            "label": "未生效",
+            "value": "ineffective",
+            "config": {
+              "edit": 0,
+              "enable": 0,
+              "remove": 0
+            }
+          },
+          {
+            "label": "审核中",
+            "value": "under_review",
+            "config": {
+              "edit": 0,
+              "enable": 0,
+              "remove": 0
+            }
+          },
+          {
+            "label": "正常",
+            "value": "normal",
+            "config": {
+              "edit": 0,
+              "enable": 0,
+              "remove": 0
+            }
+          },
+          {
+            "label": "变更中",
+            "value": "in_change",
+            "config": {
+              "edit": 0,
+              "enable": 0,
+              "remove": 0
+            }
+          },
+          {
+            "label": "作废",
+            "value": "invalid",
+            "config": {
+              "edit": 0,
+              "enable": 0,
+              "remove": 0
+            }
+          }
+        ],
+        "define_type": "package",
+        "_id": "5bd937eb319d19b3a0af9b7f",
+        "is_index_field": false,
+        "is_single": false,
+        "config": {
+          "add": 0,
+          "edit": 0,
+          "enable": 0,
+          "display": 1,
+          "remove": 0,
+          "attrs": {
+            "is_readonly": 0,
+            "is_required": 0,
+            "api_name": 0,
+            "options": 0,
+            "is_unique": 0,
+            "default_value": 0,
+            "label": 0,
+            "help_text": 0
+          }
+        },
+        "index_name": "string_6",
+        "help_text": "",
+        "status": "new"
+      },
+      "life_status_before_invalid": {
+        "describe_api_name": "SpecificationObj",
+        "is_index": false,
+        "is_active": true,
+        "create_time": 1542080934911,
+        "pattern": "",
+        "description": "作废前生命状态",
+        "is_unique": false,
+        "label": "作废前生命状态",
+        "type": "text",
+        "is_need_convert": false,
+        "is_required": false,
+        "api_name": "life_status_before_invalid",
+        "define_type": "package",
+        "_id": "5bea49a6a5083d2c8456f8d6",
+        "is_index_field": false,
+        "is_single": false,
+        "max_length": 256,
+        "status": "new"
+      },
+      "lock_rule": {
+        "describe_api_name": "SpecificationObj",
+        "is_index": false,
+        "is_active": true,
+        "create_time": 1542080934911,
+        "description": "锁定规则",
+        "is_unique": false,
+        "default_value": "default_lock_rule",
+        "rules": [],
+        "label": "锁定规则",
+        "type": "lock_rule",
+        "is_need_convert": false,
+        "is_required": false,
+        "api_name": "lock_rule",
+        "define_type": "package",
+        "_id": "5bea49a6a5083d2c8456f8d4",
+        "is_index_field": false,
+        "is_single": false,
+        "status": "new"
+      },
+      "lock_status": {
+        "describe_api_name": "SpecificationObj",
+        "is_index": true,
+        "is_active": true,
+        "create_time": 1540962283531,
+        "description": "锁定状态",
+        "is_unique": false,
+        "default_value": "0",
+        "label": "锁定状态",
+        "type": "select_one",
+        "is_need_convert": false,
+        "is_required": false,
+        "api_name": "lock_status",
+        "options": [
+          {
+            "label": "未锁定",
+            "value": "0",
+            "config": {
+              "edit": 0,
+              "enable": 0,
+              "remove": 0
+            }
+          },
+          {
+            "label": "锁定",
+            "value": "1",
+            "config": {
+              "edit": 0,
+              "enable": 0,
+              "remove": 0
+            }
+          }
+        ],
+        "define_type": "package",
+        "_id": "5bd937eb319d19b3a0af9b7e",
+        "is_index_field": false,
+        "is_single": false,
+        "config": {
+          "add": 0,
+          "edit": 0,
+          "enable": 0,
+          "display": 1,
+          "remove": 0,
+          "attrs": {
+            "is_readonly": 0,
+            "is_required": 0,
+            "api_name": 0,
+            "options": 0,
+            "is_unique": 0,
+            "default_value": 0,
+            "label": 0,
+            "help_text": 0
+          }
+        },
+        "index_name": "string_5",
+        "help_text": "",
+        "status": "new"
+      },
+      "lock_user": {
+        "describe_api_name": "SpecificationObj",
+        "is_index": false,
+        "is_active": true,
+        "create_time": 1542080934911,
+        "description": "加锁人",
+        "is_unique": false,
+        "label": "加锁人",
+        "type": "employee",
+        "is_need_convert": false,
+        "is_required": false,
+        "api_name": "lock_user",
+        "define_type": "package",
+        "_id": "5bea49a6a5083d2c8456f8d7",
+        "is_index_field": false,
+        "is_single": true,
+        "status": "new"
+      },
+      "name": {
+        "describe_api_name": "SpecificationObj",
+        "default_is_expression": false,
+        "pattern": "",
+        "description": "name",
+        "is_unique": true,
+        "type": "text",
+        "default_to_zero": false,
+        "is_required": true,
+        "define_type": "system",
+        "is_extend": false,
+        "is_single": false,
+        "index_name": "string_7",
+        "max_length": 100,
+        "is_index": true,
+        "is_active": true,
+        "create_time": 1540962283552,
+        "default_value": "",
+        "label": "规格名",
+        "api_name": "name",
+        "_id": "5bd937eb319d19b3a0af9b81",
+        "is_index_field": false,
+        "config": {
+          "add": 0,
+          "edit": 1,
+          "enable": 0,
+          "display": 1,
+          "remove": 0,
+          "attrs": {
+            "api_name": 1,
+            "is_unique": 1,
+            "label": 1,
+            "type": 1
+          }
+        },
+        "help_text": "",
+        "status": "released"
+      },
+      "owner": {
+        "describe_api_name": "SpecificationObj",
+        "is_index": true,
+        "is_active": true,
+        "create_time": 1540962283430,
+        "is_unique": false,
+        "label": "负责人",
+        "type": "employee",
+        "is_need_convert": false,
+        "is_required": true,
+        "api_name": "owner",
+        "define_type": "package",
+        "_id": "5be5599c319d19d5425e2ec9",
+        "is_index_field": false,
+        "is_single": true,
+        "config": {
+          "add": 0,
+          "edit": 0,
+          "enable": 0,
+          "display": 1,
+          "remove": 0,
+          "attrs": {
+            "api_name": 0,
+            "label": 0
+          }
+        },
+        "index_name": "stringList_1",
+        "help_text": "",
+        "status": "new"
+      },
+      "owner_department": {
+        "describe_api_name": "SpecificationObj",
+        "default_is_expression": false,
+        "pattern": "",
+        "is_unique": false,
+        "type": "text",
+        "default_to_zero": false,
+        "is_required": false,
+        "define_type": "package",
+        "is_single": true,
+        "index_name": "string_4",
+        "max_length": 100,
+        "is_index": true,
+        "is_active": true,
+        "create_time": 1540962283552,
+        "default_value": "",
+        "label": "负责人主属部门",
+        "is_need_convert": false,
+        "api_name": "owner_department",
+        "_id": "5bd937eb319d19b3a0af9b82",
+        "is_index_field": false,
+        "config": {
+          "add": 0,
+          "edit": 0,
+          "enable": 0,
+          "display": 1,
+          "remove": 0,
+          "attrs": {
+            "api_name": 0,
+            "label": 0
+          }
+        },
+        "help_text": "",
+        "status": "new"
+      },
+      "record_type": {
+        "describe_api_name": "SpecificationObj",
+        "is_index": true,
+        "is_active": true,
+        "create_time": 1540962283595,
+        "description": "record_type",
+        "is_unique": false,
+        "label": "业务类型",
+        "type": "record_type",
+        "is_need_convert": false,
+        "is_required": false,
+        "api_name": "record_type",
+        "options": [
+          {
+            "is_active": true,
+            "api_name": "default__c",
+            "description": "预设业务类型",
+            "label": "预设业务类型",
+            "config": {
+              "edit": 1,
+              "enable": 0,
+              "remove": 0
+            },
+            "value": "default__c"
+          }
+        ],
+        "define_type": "package",
+        "_id": "5bd937eb319d19b3a0af9b85",
+        "is_index_field": false,
+        "is_single": false,
+        "config": {
+          "add": 0,
+          "edit": 0,
+          "enable": 0,
+          "display": 1,
+          "remove": 0,
+          "attrs": {
+            "api_name": 0,
+            "label": 0
+          }
+        },
+        "index_name": "record_type",
+        "help_text": "",
+        "status": "released"
+      },
+      "relevant_team": {
+        "describe_api_name": "SpecificationObj",
+        "embedded_fields": {
+          "teamMemberEmployee": {
+            "is_index": true,
+            "is_need_convert": true,
+            "is_required": false,
+            "api_name": "teamMemberEmployee",
+            "is_unique": false,
+            "define_type": "package",
+            "description": "成员角色",
+            "label": "成员角色",
+            "type": "employee",
+            "is_single": true,
+            "help_text": "成员角色"
+          },
+          "teamMemberRole": {
+            "is_index": true,
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "teamMemberRole",
+            "options": [
+              {
+                "label": "负责人",
+                "value": "1"
+              },
+              {
+                "label": "普通成员",
+                "value": "4"
+              }
+            ],
+            "is_unique": false,
+            "define_type": "package",
+            "description": "成员员工",
+            "label": "成员员工",
+            "type": "select_one",
+            "help_text": "成员员工"
+          },
+          "teamMemberPermissionType": {
+            "is_index": true,
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "teamMemberPermissionType",
+            "options": [
+              {
+                "label": "只读",
+                "value": "1"
+              },
+              {
+                "label": "",
+                "value": "2"
+              }
+            ],
+            "is_unique": false,
+            "define_type": "package",
+            "description": "成员权限类型",
+            "label": "成员权限类型",
+            "type": "select_one",
+            "help_text": "成员权限类型"
+          }
+        },
+        "is_index": false,
+        "is_active": true,
+        "create_time": 1542080934955,
+        "is_unique": false,
+        "label": "相关团队",
+        "type": "embedded_object_list",
+        "is_need_convert": false,
+        "is_required": false,
+        "api_name": "relevant_team",
+        "define_type": "package",
+        "_id": "5bea49a6a5083d2c8456f8d8",
+        "is_index_field": false,
+        "is_single": false,
+        "help_text": "相关团队",
+        "status": "new"
+      },
+      "_id": {
+        "type": "text",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": false,
+        "is_unique": false,
+        "max_length": 200,
+        "pattern": "",
+        "label": "_id",
+        "api_name": "_id",
+        "description": "_id",
+        "status": "released",
+        "create_time": 1540953692725
+      },
+      "created_by": {
+        "type": "employee",
+        "define_type": "system",
+        "is_index": true,
+        "is_need_convert": true,
+        "is_required": false,
+        "is_unique": false,
+        "is_single": true,
+        "api_name": "created_by",
+        "status": "released",
+        "label": "创建人",
+        "is_active": true,
+        "create_time": 1540953692725
+      },
+      "last_modified_by": {
+        "type": "employee",
+        "define_type": "system",
+        "is_index": true,
+        "is_need_convert": true,
+        "is_required": false,
+        "is_unique": false,
+        "is_single": true,
+        "api_name": "last_modified_by",
+        "status": "released",
+        "is_active": true,
+        "label": "最后修改人",
+        "create_time": 1540953692725
+      },
+      "package": {
+        "type": "text",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": false,
+        "is_unique": false,
+        "max_length": 200,
+        "pattern": "",
+        "label": "package",
+        "api_name": "package",
+        "description": "package",
+        "status": "released",
+        "create_time": 1540953692725
+      },
+      "tenant_id": {
+        "type": "text",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": true,
+        "is_unique": false,
+        "max_length": 200,
+        "pattern": "",
+        "label": "tenant_id",
+        "api_name": "tenant_id",
+        "description": "tenant_id",
+        "status": "released",
+        "create_time": 1540953692725
+      },
+      "object_describe_id": {
+        "type": "text",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": true,
+        "is_unique": false,
+        "max_length": 200,
+        "pattern": "",
+        "label": "object_describe_id",
+        "api_name": "object_describe_id",
+        "description": "object_describe_id",
+        "status": "released",
+        "create_time": 1540953692725
+      },
+      "object_describe_api_name": {
+        "type": "text",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": true,
+        "is_unique": false,
+        "max_length": 200,
+        "pattern": "",
+        "label": "object_describe_api_name",
+        "api_name": "object_describe_api_name",
+        "description": "object_describe_api_name",
+        "status": "released",
+        "create_time": 1540953692725
+      },
+      "version": {
+        "type": "number",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": false,
+        "is_unique": false,
+        "round_mode": 4,
+        "length": 8,
+        "decimal_places": 0,
+        "label": "version",
+        "api_name": "version",
+        "description": "version",
+        "status": "released",
+        "create_time": 1540953692725
+      },
+      "create_time": {
+        "type": "date_time",
+        "define_type": "system",
+        "is_index": true,
+        "is_need_convert": false,
+        "is_required": false,
+        "is_unique": false,
+        "time_zone": "",
+        "date_format": "yyyy-MM-dd HH:mm:ss",
+        "label": "创建时间",
+        "api_name": "create_time",
+        "description": "create_time",
+        "status": "released",
+        "create_time": 1540953692725
+      },
+      "last_modified_time": {
+        "type": "date_time",
+        "define_type": "system",
+        "is_index": true,
+        "is_need_convert": false,
+        "is_required": false,
+        "is_unique": false,
+        "time_zone": "",
+        "date_format": "yyyy-MM-dd HH:mm:ss",
+        "label": "最后修改时间",
+        "api_name": "last_modified_time",
+        "description": "last_modified_time",
+        "status": "released",
+        "create_time": 1540953692725
+      },
+      "is_deleted": {
+        "type": "true_or_false",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": false,
+        "is_unique": false,
+        "label": "is_deleted",
+        "api_name": "is_deleted",
+        "description": "is_deleted",
+        "default_value": false,
+        "status": "released",
+        "create_time": 1540953692725
+      },
+      "out_tenant_id": {
+        "type": "text",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": false,
+        "is_unique": false,
+        "max_length": 200,
+        "pattern": "",
+        "label": "外部企业",
+        "api_name": "out_tenant_id",
+        "description": "out_tenant_id",
+        "status": "released",
+        "create_time": 1540953692725,
+        "config": {
+          "display": 0
+        }
+      },
+      "out_owner": {
+        "type": "employee",
+        "define_type": "system",
+        "is_index": false,
+        "is_need_convert": false,
+        "is_required": false,
+        "is_unique": false,
+        "is_single": true,
+        "api_name": "out_owner",
+        "status": "released",
+        "label": "外部负责人",
+        "config": {
+          "display": 1
+        },
+        "create_time": 1540953692725
+      }
+    },
+    "actions": {},
+    "index_version": 1,
+    "_id": "5bd9165c319d19b3a0af9ad4",
+    "tenant_id": "74735",
+    "is_udef": true,
+    "api_name": "SpecificationObj",
+    "last_modified_by": "1000",
+    "display_name": "规格",
+    "package": "CRM",
+    "is_active": true,
+    "icon_path": "",
+    "version": 9,
+    "release_version": "6.4",
+    "define_type": "package",
+    "is_deleted": false,
+    "config": {
+      "button": {
+        "add": 1
+      },
+      "layout": {
+        "add": 1,
+        "assign": 1
+      },
+      "layout_rule": {
+        "add": 1
+      },
+      "edit": 1,
+      "cascade": {
+        "add": 1
+      },
+      "rule": {
+        "add": 1
+      },
+      "fields": {
+        "add": 1
+      },
+      "record_type": {
+        "add": 1,
+        "assign": 1
+      }
+    },
+    "last_modified_time": 1542080934924,
+    "create_time": 1540953692725,
+    "store_table_name": "specification",
+    "icon_index": 0,
+    "description": ""
+  },
+  "templates": [],
+  "detailObjectList": [
+    {
+      "fieldApiName": "specification_id",
+      "fieldLabel": "规格",
+      "objectDescribe": {
+        "fields": {
+          "life_status": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890017,
+            "description": "",
+            "is_unique": false,
+            "default_value": "normal",
+            "label": "生命状态",
+            "type": "select_one",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "life_status",
+            "options": [
+              {
+                "label": "未生效",
+                "value": "ineffective"
+              },
+              {
+                "label": "审核中",
+                "value": "under_review"
+              },
+              {
+                "label": "正常",
+                "value": "normal"
+              },
+              {
+                "label": "变更中",
+                "value": "in_change"
+              },
+              {
+                "label": "作废",
+                "value": "invalid"
+              }
+            ],
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c14e",
+            "is_index_field": false,
+            "is_single": false,
+            "config": {
+              "add": 0,
+              "edit": 0,
+              "enable": 0,
+              "display": 1,
+              "remove": 0,
+              "attrs": {
+                "is_required": 0,
+                "options": 0,
+                "default_value": 0,
+                "label": 0,
+                "help_text": 0
+              }
+            },
+            "index_name": "string_7",
+            "help_text": "",
+            "status": "new"
+          },
+          "life_status_before_invalid": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": false,
+            "is_active": true,
+            "create_time": 1542112890039,
+            "pattern": "",
+            "description": "作废前生命状态",
+            "is_unique": false,
+            "label": "作废前生命状态",
+            "type": "text",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "life_status_before_invalid",
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c154",
+            "is_index_field": false,
+            "is_single": false,
+            "max_length": 256,
+            "status": "new"
+          },
+          "lock_rule": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": false,
+            "is_active": true,
+            "create_time": 1542112889881,
+            "description": "锁定规则",
+            "is_unique": false,
+            "default_value": "default_lock_rule",
+            "rules": [],
+            "label": "锁定规则",
+            "type": "lock_rule",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "lock_rule",
+            "define_type": "package",
+            "_id": "5beac679319d196c5ef5c14c",
+            "is_index_field": false,
+            "is_single": false,
+            "status": "new"
+          },
+          "lock_status": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112889985,
+            "description": "锁定状态",
+            "is_unique": false,
+            "default_value": "0",
+            "label": "锁定状态",
+            "type": "select_one",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "lock_status",
+            "options": [
+              {
+                "label": "未锁定",
+                "value": "0"
+              },
+              {
+                "label": "锁定",
+                "value": "1"
+              }
+            ],
+            "define_type": "package",
+            "_id": "5beac679319d196c5ef5c14d",
+            "is_index_field": false,
+            "is_single": false,
+            "index_name": "string_5",
+            "config": {},
+            "status": "new"
+          },
+          "lock_user": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": false,
+            "is_active": true,
+            "create_time": 1542112890018,
+            "description": "加锁人",
+            "is_unique": false,
+            "label": "加锁人",
+            "type": "employee",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "lock_user",
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c150",
+            "is_index_field": false,
+            "is_single": true,
+            "status": "new"
+          },
+          "name": {
+            "describe_api_name": "SpecificationValueObj",
+            "default_is_expression": false,
+            "pattern": "",
+            "description": "name",
+            "is_unique": false,
+            "type": "text",
+            "default_to_zero": false,
+            "is_required": true,
+            "define_type": "system",
+            "is_extend": false,
+            "is_single": false,
+            "index_name": "string_8",
+            "max_length": 100,
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890039,
+            "default_value": "",
+            "label": "规格值",
+            "api_name": "name",
+            "_id": "5beac67a319d196c5ef5c155",
+            "is_index_field": false,
+            "help_text": "",
+            "status": "released"
+          },
+          "order_field": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890018,
+            "pattern": "",
+            "description": "排序",
+            "is_unique": false,
+            "label": "排序",
+            "type": "text",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "order_field",
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c14f",
+            "is_extend": false,
+            "is_index_field": false,
+            "is_single": false,
+            "max_length": 200,
+            "status": "released"
+          },
+          "owner": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112889881,
+            "is_unique": false,
+            "label": "负责人",
+            "type": "employee",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "owner",
+            "define_type": "package",
+            "_id": "5beac679319d196c5ef5c14b",
+            "is_index_field": false,
+            "is_single": true,
+            "config": {
+              "add": 0,
+              "edit": 0,
+              "enable": 0,
+              "display": 1,
+              "remove": 0,
+              "attrs": {
+                "label": 0
+              }
+            },
+            "index_name": "stringList_1",
+            "help_text": "",
+            "status": "new"
+          },
+          "owner_department": {
+            "describe_api_name": "SpecificationValueObj",
+            "default_is_expression": false,
+            "pattern": "",
+            "is_unique": false,
+            "type": "text",
+            "default_to_zero": false,
+            "is_required": false,
+            "define_type": "package",
+            "is_single": true,
+            "index_name": "string_4",
+            "max_length": 100,
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890040,
+            "default_value": "",
+            "label": "负责人主属部门",
+            "is_need_convert": false,
+            "api_name": "owner_department",
+            "_id": "5beac67a319d196c5ef5c156",
+            "is_index_field": false,
+            "config": {
+              "add": 0,
+              "edit": 0,
+              "enable": 0,
+              "display": 1,
+              "remove": 0,
+              "attrs": {
+                "label": 0
+              }
+            },
+            "help_text": "",
+            "status": "new"
+          },
+          "record_type": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890039,
+            "description": "record_type",
+            "is_unique": false,
+            "label": "业务类型",
+            "type": "record_type",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "record_type",
+            "options": [
+              {
+                "is_active": true,
+                "api_name": "default__c",
+                "description": "预设业务类型",
+                "label": "预设业务类型",
+                "value": "default__c"
+              }
+            ],
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c152",
+            "is_index_field": false,
+            "is_single": false,
+            "config": {
+              "add": 0,
+              "edit": 0,
+              "enable": 0,
+              "display": 1,
+              "remove": 0,
+              "attrs": {
+                "label": 0
+              }
+            },
+            "index_name": "record_type",
+            "help_text": "",
+            "status": "released"
+          },
+          "relevant_team": {
+            "describe_api_name": "SpecificationValueObj",
+            "embedded_fields": {
+              "teamMemberEmployee": {
+                "is_index": true,
+                "is_need_convert": true,
+                "is_required": false,
+                "api_name": "teamMemberEmployee",
+                "is_unique": false,
+                "define_type": "package",
+                "description": "成员员工",
+                "label": "成员员工",
+                "type": "employee",
+                "is_single": true,
+                "help_text": "成员员工"
+              },
+              "teamMemberRole": {
+                "is_index": true,
+                "is_need_convert": false,
+                "is_required": false,
+                "api_name": "teamMemberRole",
+                "options": [
+                  {
+                    "label": "负责人",
+                    "value": "1"
+                  },
+                  {
+                    "label": "普通成员",
+                    "value": "4"
+                  }
+                ],
+                "is_unique": false,
+                "define_type": "package",
+                "description": "成员角色",
+                "label": "成员角色",
+                "type": "select_one",
+                "help_text": "成员角色"
+              },
+              "teamMemberPermissionType": {
+                "is_index": true,
+                "is_need_convert": false,
+                "is_required": false,
+                "api_name": "teamMemberPermissionType",
+                "options": [
+                  {
+                    "label": "只读",
+                    "value": "1"
+                  },
+                  {
+                    "label": "读写",
+                    "value": "2"
+                  }
+                ],
+                "is_unique": false,
+                "define_type": "package",
+                "description": "成员权限类型",
+                "label": "成员权限类型",
+                "type": "select_one",
+                "help_text": "成员权限类型"
+              }
+            },
+            "is_index": false,
+            "is_active": true,
+            "create_time": 1542112890019,
+            "is_unique": false,
+            "label": "相关团队",
+            "type": "embedded_object_list",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "relevant_team",
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c151",
+            "is_index_field": false,
+            "is_single": false,
+            "help_text": "相关团队",
+            "status": "new"
+          },
+          "specification_id": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890039,
+            "is_unique": false,
+            "label": "规格",
+            "target_api_name": "SpecificationObj",
+            "type": "master_detail",
+            "target_related_list_name": "target_related_list_specificationvalue",
+            "target_related_list_label": "规格值",
+            "is_required": true,
+            "api_name": "specification_id",
+            "define_type": "package",
+            "is_create_when_master_create": true,
+            "_id": "5beac67a319d196c5ef5c153",
+            "is_extend": false,
+            "is_index_field": false,
+            "is_required_when_master_create": false,
+            "is_single": false,
+            "index_name": "string_6",
+            "help_text": "",
+            "status": "released"
+          },
+          "_id": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "_id",
+            "api_name": "_id",
+            "description": "_id",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "created_by": {
+            "type": "employee",
+            "define_type": "system",
+            "is_index": true,
+            "is_need_convert": true,
+            "is_required": false,
+            "is_unique": false,
+            "is_single": true,
+            "api_name": "created_by",
+            "status": "released",
+            "label": "创建人",
+            "is_active": true,
+            "create_time": 1540962431075
+          },
+          "last_modified_by": {
+            "type": "employee",
+            "define_type": "system",
+            "is_index": true,
+            "is_need_convert": true,
+            "is_required": false,
+            "is_unique": false,
+            "is_single": true,
+            "api_name": "last_modified_by",
+            "status": "released",
+            "is_active": true,
+            "label": "最后修改人",
+            "create_time": 1540962431075
+          },
+          "package": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "package",
+            "api_name": "package",
+            "description": "package",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "tenant_id": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": true,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "tenant_id",
+            "api_name": "tenant_id",
+            "description": "tenant_id",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "object_describe_id": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": true,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "object_describe_id",
+            "api_name": "object_describe_id",
+            "description": "object_describe_id",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "object_describe_api_name": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": true,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "object_describe_api_name",
+            "api_name": "object_describe_api_name",
+            "description": "object_describe_api_name",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "version": {
+            "type": "number",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "round_mode": 4,
+            "length": 8,
+            "decimal_places": 0,
+            "label": "version",
+            "api_name": "version",
+            "description": "version",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "create_time": {
+            "type": "date_time",
+            "define_type": "system",
+            "is_index": true,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "time_zone": "",
+            "date_format": "yyyy-MM-dd HH:mm:ss",
+            "label": "创建时间",
+            "api_name": "create_time",
+            "description": "create_time",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "last_modified_time": {
+            "type": "date_time",
+            "define_type": "system",
+            "is_index": true,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "time_zone": "",
+            "date_format": "yyyy-MM-dd HH:mm:ss",
+            "label": "最后修改时间",
+            "api_name": "last_modified_time",
+            "description": "last_modified_time",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "is_deleted": {
+            "type": "true_or_false",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "label": "is_deleted",
+            "api_name": "is_deleted",
+            "description": "is_deleted",
+            "default_value": false,
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "out_tenant_id": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "外部企业",
+            "api_name": "out_tenant_id",
+            "description": "out_tenant_id",
+            "status": "released",
+            "create_time": 1540962431075,
+            "config": {
+              "display": 0
+            }
+          },
+          "out_owner": {
+            "type": "employee",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "is_single": true,
+            "api_name": "out_owner",
+            "status": "released",
+            "label": "外部负责人",
+            "config": {
+              "display": 1
+            },
+            "create_time": 1540962431075
+          },
+          "data_own_department": {
+            "type": "department",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "is_single": true,
+            "api_name": "data_own_department",
+            "status": "released",
+            "label": "归属部门",
+            "is_active": true,
+            "create_time": 1540962431075
+          }
+        },
+        "actions": {},
+        "index_version": 1,
+        "_id": "5bd9387f319d19b3a0af9b87",
+        "tenant_id": "74735",
+        "is_udef": true,
+        "api_name": "SpecificationValueObj",
+        "last_modified_by": "-1000",
+        "display_name": "规格值",
+        "package": "CRM",
+        "is_active": true,
+        "version": 14,
+        "release_version": "6.4",
+        "define_type": "package",
+        "is_deleted": false,
+        "last_modified_time": 1542112889875,
+        "create_time": 1540962431075,
+        "store_table_name": "specification_value",
+        "icon_index": 0
+      },
+      "related_list_name": "target_related_list_specificationvalue",
+      "related_list_label": "规格值",
+      "layoutList": [
+        {
+          "detail_layout": {
+            "buttons": [
+              {
+                "action_type": "default",
+                "api_name": "Edit_button_default",
+                "action": "Edit",
+                "label": "编辑"
+              },
+              {
+                "action_type": "default",
+                "api_name": "ChangeOwner_button_default",
+                "action": "ChangeOwner",
+                "label": "更换负责人"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Abolish_button_default",
+                "action": "Abolish",
+                "label": "作废"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Lock_button_default",
+                "action": "Lock",
+                "label": "锁定"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Unlock_button_default",
+                "action": "Unlock",
+                "label": "解锁"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Clone_button_default",
+                "action": "Clone",
+                "label": "复制"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Print_button_default",
+                "action": "Print",
+                "label": "打印"
+              },
+              {
+                "action_type": "default",
+                "api_name": "SaleRecord_button_default",
+                "action": "SaleRecord",
+                "label": "销售记录"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Dial_button_default",
+                "action": "Dial",
+                "label": "打电话"
+              },
+              {
+                "action_type": "default",
+                "api_name": "StartBPM_button_default",
+                "action": "StartBPM",
+                "label": "发起流程"
+              },
+              {
+                "action_type": "default",
+                "api_name": "SendMail_button_default",
+                "action": "SendMail",
+                "label": "发邮件"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Discuss_button_default",
+                "action": "Discuss",
+                "label": "转发"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Remind_button_default",
+                "action": "Remind",
+                "label": "提醒"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Schedule_button_default",
+                "action": "Schedule",
+                "label": "日程"
+              }
+            ],
+            "components": [
+              {
+                "field_section": [
+                  {
+                    "form_fields": [
+                      {
+                        "is_readonly": false,
+                        "is_required": true,
+                        "render_type": "text",
+                        "field_name": "name"
+                      },
+                      {
+                        "is_readonly": false,
+                        "is_required": false,
+                        "render_type": "text",
+                        "field_name": "order_field"
+                      }
+                    ],
+                    "api_name": "base_field_section__c",
+                    "tab_index": "ltr",
+                    "column": 2,
+                    "header": "基本信息",
+                    "is_show": true
+                  }
+                ],
+                "buttons": [],
+                "api_name": "form_component",
+                "is_hidden": false,
+                "header": "详细信息",
+                "type": "form",
+                "order": 2
+              }
+            ],
+            "last_modified_time": 1542091038289,
+            "is_deleted": false,
+            "version": 3,
+            "create_time": 1542075856616,
+            "_id": "5bea35d0319d192214d86d9c",
+            "layout_description": "规格值默认布局",
+            "api_name": "SpecificationValueObj_layout_generate_by_UDObjectServer__c",
+            "default_component": "default_component",
+            "config": {
+              "edit": 1,
+              "remove": 0
+            },
+            "top_info": {
+              "type": "simple",
+              "order": 0,
+              "header": "顶部信息",
+              "buttons": [],
+              "api_name": "top_info",
+              "is_hidden": false,
+              "field_section": [
+                {
+                  "api_name": "detail",
+                  "form_fields": [
+                    {
+                      "field_name": "owner",
+                      "render_type": "employee"
+                    },
+                    {
+                      "field_name": "owner_department",
+                      "render_type": "text"
+                    },
+                    {
+                      "field_name": "last_modified_time",
+                      "render_type": "date_time"
+                    },
+                    {
+                      "field_name": "record_type",
+                      "render_type": "record_type"
+                    }
+                  ]
+                }
+              ]
+            },
+            "display_name": "默认布局",
+            "is_default": true,
+            "last_modified_by": "1000",
+            "layout_type": "detail",
+            "package": "CRM",
+            "ref_object_api_name": "SpecificationValueObj",
+            "tenant_id": "74735"
+          },
+          "list_layout": {
+            "buttons": [
+              {
+                "action_type": "default",
+                "api_name": "Edit_button_default",
+                "action": "Edit",
+                "label": "编辑"
+              },
+              {
+                "action_type": "default",
+                "api_name": "ChangeOwner_button_default",
+                "action": "ChangeOwner",
+                "label": "更换负责人"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Abolish_button_default",
+                "action": "Abolish",
+                "label": "作废"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Lock_button_default",
+                "action": "Lock",
+                "label": "锁定"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Unlock_button_default",
+                "action": "Unlock",
+                "label": "解锁"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Clone_button_default",
+                "action": "Clone",
+                "label": "复制"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Print_button_default",
+                "action": "Print",
+                "label": "打印"
+              },
+              {
+                "action_type": "default",
+                "api_name": "SaleRecord_button_default",
+                "action": "SaleRecord",
+                "label": "销售记录"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Dial_button_default",
+                "action": "Dial",
+                "label": "打电话"
+              },
+              {
+                "action_type": "default",
+                "api_name": "StartBPM_button_default",
+                "action": "StartBPM",
+                "label": "发起流程"
+              },
+              {
+                "action_type": "default",
+                "api_name": "SendMail_button_default",
+                "action": "SendMail",
+                "label": "发邮件"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Discuss_button_default",
+                "action": "Discuss",
+                "label": "转发"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Remind_button_default",
+                "action": "Remind",
+                "label": "提醒"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Schedule_button_default",
+                "action": "Schedule",
+                "label": "日程"
+              }
+            ],
+            "components": [
+              {
+                "buttons": [],
+                "type": "table",
+                "api_name": "SpecificationValueObj_table_component",
+                "related_list_name": "target_related_list_specificationvalue",
+                "header": "预设业务类型",
+                "include_fields": [
+                  {
+                    "api_name": "name",
+                    "render_type": "text",
+                    "field_name": "name"
+                  },
+                  {
+                    "api_name": "specification_id",
+                    "render_type": "master_detail",
+                    "field_name": "specification_id"
+                  },
+                  {
+                    "api_name": "life_status",
+                    "render_type": "select_one",
+                    "field_name": "life_status"
+                  }
+                ],
+                "ref_object_api_name": "default__c"
+              }
+            ],
+            "last_modified_time": 1542091038289,
+            "is_deleted": false,
+            "version": 3,
+            "create_time": 1542075856616,
+            "_id": "5bea35d0319d192214d86d9c",
+            "layout_description": "规格值默认布局",
+            "api_name": "SpecificationValueObj_layout_generate_by_UDObjectServer__c",
+            "default_component": "default_component",
+            "config": {
+              "edit": 1,
+              "remove": 0
+            },
+            "top_info": {
+              "type": "simple",
+              "order": 0,
+              "header": "顶部信息",
+              "buttons": [],
+              "api_name": "top_info",
+              "is_hidden": false,
+              "field_section": [
+                {
+                  "api_name": "detail",
+                  "form_fields": [
+                    {
+                      "field_name": "owner",
+                      "render_type": "employee"
+                    },
+                    {
+                      "field_name": "owner_department",
+                      "render_type": "text"
+                    },
+                    {
+                      "field_name": "last_modified_time",
+                      "render_type": "date_time"
+                    },
+                    {
+                      "field_name": "record_type",
+                      "render_type": "record_type"
+                    }
+                  ]
+                }
+              ]
+            },
+            "display_name": "默认布局",
+            "is_default": true,
+            "last_modified_by": "1000",
+            "layout_type": "detail",
+            "package": "CRM",
+            "ref_object_api_name": "SpecificationValueObj",
+            "tenant_id": "74735"
+          },
+          "record_type": "default__c"
+        }
+      ]
+    }
+  ],
+  "allDetailObjectList": [
+    {
+      "fieldApiName": "specification_id",
+      "fieldLabel": "规格",
+      "objectDescribe": {
+        "fields": {
+          "life_status": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890017,
+            "description": "",
+            "is_unique": false,
+            "default_value": "normal",
+            "label": "生命状态",
+            "type": "select_one",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "life_status",
+            "options": [
+              {
+                "label": "未生效",
+                "value": "ineffective"
+              },
+              {
+                "label": "审核中",
+                "value": "under_review"
+              },
+              {
+                "label": "正常",
+                "value": "normal"
+              },
+              {
+                "label": "变更中",
+                "value": "in_change"
+              },
+              {
+                "label": "作废",
+                "value": "invalid"
+              }
+            ],
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c14e",
+            "is_index_field": false,
+            "is_single": false,
+            "config": {
+              "add": 0,
+              "edit": 0,
+              "enable": 0,
+              "display": 1,
+              "remove": 0,
+              "attrs": {
+                "is_required": 0,
+                "options": 0,
+                "default_value": 0,
+                "label": 0,
+                "help_text": 0
+              }
+            },
+            "index_name": "string_7",
+            "help_text": "",
+            "status": "new"
+          },
+          "life_status_before_invalid": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": false,
+            "is_active": true,
+            "create_time": 1542112890039,
+            "pattern": "",
+            "description": "作废前生命状态",
+            "is_unique": false,
+            "label": "作废前生命状态",
+            "type": "text",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "life_status_before_invalid",
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c154",
+            "is_index_field": false,
+            "is_single": false,
+            "max_length": 256,
+            "status": "new"
+          },
+          "lock_rule": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": false,
+            "is_active": true,
+            "create_time": 1542112889881,
+            "description": "锁定规则",
+            "is_unique": false,
+            "default_value": "default_lock_rule",
+            "rules": [],
+            "label": "锁定规则",
+            "type": "lock_rule",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "lock_rule",
+            "define_type": "package",
+            "_id": "5beac679319d196c5ef5c14c",
+            "is_index_field": false,
+            "is_single": false,
+            "status": "new"
+          },
+          "lock_status": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112889985,
+            "description": "锁定状态",
+            "is_unique": false,
+            "default_value": "0",
+            "label": "锁定状态",
+            "type": "select_one",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "lock_status",
+            "options": [
+              {
+                "label": "未锁定",
+                "value": "0"
+              },
+              {
+                "label": "锁定",
+                "value": "1"
+              }
+            ],
+            "define_type": "package",
+            "_id": "5beac679319d196c5ef5c14d",
+            "is_index_field": false,
+            "is_single": false,
+            "index_name": "string_5",
+            "config": {},
+            "status": "new"
+          },
+          "lock_user": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": false,
+            "is_active": true,
+            "create_time": 1542112890018,
+            "description": "加锁人",
+            "is_unique": false,
+            "label": "加锁人",
+            "type": "employee",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "lock_user",
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c150",
+            "is_index_field": false,
+            "is_single": true,
+            "status": "new"
+          },
+          "name": {
+            "describe_api_name": "SpecificationValueObj",
+            "default_is_expression": false,
+            "pattern": "",
+            "description": "name",
+            "is_unique": false,
+            "type": "text",
+            "default_to_zero": false,
+            "is_required": true,
+            "define_type": "system",
+            "is_extend": false,
+            "is_single": false,
+            "index_name": "string_8",
+            "max_length": 100,
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890039,
+            "default_value": "",
+            "label": "规格值",
+            "api_name": "name",
+            "_id": "5beac67a319d196c5ef5c155",
+            "is_index_field": false,
+            "help_text": "",
+            "status": "released"
+          },
+          "order_field": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890018,
+            "pattern": "",
+            "description": "排序",
+            "is_unique": false,
+            "label": "排序",
+            "type": "text",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "order_field",
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c14f",
+            "is_extend": false,
+            "is_index_field": false,
+            "is_single": false,
+            "max_length": 200,
+            "status": "released"
+          },
+          "owner": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112889881,
+            "is_unique": false,
+            "label": "负责人",
+            "type": "employee",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "owner",
+            "define_type": "package",
+            "_id": "5beac679319d196c5ef5c14b",
+            "is_index_field": false,
+            "is_single": true,
+            "config": {
+              "add": 0,
+              "edit": 0,
+              "enable": 0,
+              "display": 1,
+              "remove": 0,
+              "attrs": {
+                "label": 0
+              }
+            },
+            "index_name": "stringList_1",
+            "help_text": "",
+            "status": "new"
+          },
+          "owner_department": {
+            "describe_api_name": "SpecificationValueObj",
+            "default_is_expression": false,
+            "pattern": "",
+            "is_unique": false,
+            "type": "text",
+            "default_to_zero": false,
+            "is_required": false,
+            "define_type": "package",
+            "is_single": true,
+            "index_name": "string_4",
+            "max_length": 100,
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890040,
+            "default_value": "",
+            "label": "负责人主属部门",
+            "is_need_convert": false,
+            "api_name": "owner_department",
+            "_id": "5beac67a319d196c5ef5c156",
+            "is_index_field": false,
+            "config": {
+              "add": 0,
+              "edit": 0,
+              "enable": 0,
+              "display": 1,
+              "remove": 0,
+              "attrs": {
+                "label": 0
+              }
+            },
+            "help_text": "",
+            "status": "new"
+          },
+          "record_type": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890039,
+            "description": "record_type",
+            "is_unique": false,
+            "label": "业务类型",
+            "type": "record_type",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "record_type",
+            "options": [
+              {
+                "is_active": true,
+                "api_name": "default__c",
+                "description": "预设业务类型",
+                "label": "预设业务类型",
+                "value": "default__c"
+              }
+            ],
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c152",
+            "is_index_field": false,
+            "is_single": false,
+            "config": {
+              "add": 0,
+              "edit": 0,
+              "enable": 0,
+              "display": 1,
+              "remove": 0,
+              "attrs": {
+                "label": 0
+              }
+            },
+            "index_name": "record_type",
+            "help_text": "",
+            "status": "released"
+          },
+          "relevant_team": {
+            "describe_api_name": "SpecificationValueObj",
+            "embedded_fields": {
+              "teamMemberEmployee": {
+                "is_index": true,
+                "is_need_convert": true,
+                "is_required": false,
+                "api_name": "teamMemberEmployee",
+                "is_unique": false,
+                "define_type": "package",
+                "description": "成员员工",
+                "label": "成员员工",
+                "type": "employee",
+                "is_single": true,
+                "help_text": "成员员工"
+              },
+              "teamMemberRole": {
+                "is_index": true,
+                "is_need_convert": false,
+                "is_required": false,
+                "api_name": "teamMemberRole",
+                "options": [
+                  {
+                    "label": "负责人",
+                    "value": "1"
+                  },
+                  {
+                    "label": "普通成员",
+                    "value": "4"
+                  }
+                ],
+                "is_unique": false,
+                "define_type": "package",
+                "description": "成员角色",
+                "label": "成员角色",
+                "type": "select_one",
+                "help_text": "成员角色"
+              },
+              "teamMemberPermissionType": {
+                "is_index": true,
+                "is_need_convert": false,
+                "is_required": false,
+                "api_name": "teamMemberPermissionType",
+                "options": [
+                  {
+                    "label": "只读",
+                    "value": "1"
+                  },
+                  {
+                    "label": "读写",
+                    "value": "2"
+                  }
+                ],
+                "is_unique": false,
+                "define_type": "package",
+                "description": "成员权限类型",
+                "label": "成员权限类型",
+                "type": "select_one",
+                "help_text": "成员权限类型"
+              }
+            },
+            "is_index": false,
+            "is_active": true,
+            "create_time": 1542112890019,
+            "is_unique": false,
+            "label": "相关团队",
+            "type": "embedded_object_list",
+            "is_need_convert": false,
+            "is_required": false,
+            "api_name": "relevant_team",
+            "define_type": "package",
+            "_id": "5beac67a319d196c5ef5c151",
+            "is_index_field": false,
+            "is_single": false,
+            "help_text": "相关团队",
+            "status": "new"
+          },
+          "specification_id": {
+            "describe_api_name": "SpecificationValueObj",
+            "is_index": true,
+            "is_active": true,
+            "create_time": 1542112890039,
+            "is_unique": false,
+            "label": "规格",
+            "target_api_name": "SpecificationObj",
+            "type": "master_detail",
+            "target_related_list_name": "target_related_list_specificationvalue",
+            "target_related_list_label": "规格值",
+            "is_required": true,
+            "api_name": "specification_id",
+            "define_type": "package",
+            "is_create_when_master_create": true,
+            "_id": "5beac67a319d196c5ef5c153",
+            "is_extend": false,
+            "is_index_field": false,
+            "is_required_when_master_create": false,
+            "is_single": false,
+            "index_name": "string_6",
+            "help_text": "",
+            "status": "released"
+          },
+          "_id": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "_id",
+            "api_name": "_id",
+            "description": "_id",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "created_by": {
+            "type": "employee",
+            "define_type": "system",
+            "is_index": true,
+            "is_need_convert": true,
+            "is_required": false,
+            "is_unique": false,
+            "is_single": true,
+            "api_name": "created_by",
+            "status": "released",
+            "label": "创建人",
+            "is_active": true,
+            "create_time": 1540962431075
+          },
+          "last_modified_by": {
+            "type": "employee",
+            "define_type": "system",
+            "is_index": true,
+            "is_need_convert": true,
+            "is_required": false,
+            "is_unique": false,
+            "is_single": true,
+            "api_name": "last_modified_by",
+            "status": "released",
+            "is_active": true,
+            "label": "最后修改人",
+            "create_time": 1540962431075
+          },
+          "package": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "package",
+            "api_name": "package",
+            "description": "package",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "tenant_id": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": true,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "tenant_id",
+            "api_name": "tenant_id",
+            "description": "tenant_id",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "object_describe_id": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": true,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "object_describe_id",
+            "api_name": "object_describe_id",
+            "description": "object_describe_id",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "object_describe_api_name": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": true,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "object_describe_api_name",
+            "api_name": "object_describe_api_name",
+            "description": "object_describe_api_name",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "version": {
+            "type": "number",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "round_mode": 4,
+            "length": 8,
+            "decimal_places": 0,
+            "label": "version",
+            "api_name": "version",
+            "description": "version",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "create_time": {
+            "type": "date_time",
+            "define_type": "system",
+            "is_index": true,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "time_zone": "",
+            "date_format": "yyyy-MM-dd HH:mm:ss",
+            "label": "创建时间",
+            "api_name": "create_time",
+            "description": "create_time",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "last_modified_time": {
+            "type": "date_time",
+            "define_type": "system",
+            "is_index": true,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "time_zone": "",
+            "date_format": "yyyy-MM-dd HH:mm:ss",
+            "label": "最后修改时间",
+            "api_name": "last_modified_time",
+            "description": "last_modified_time",
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "is_deleted": {
+            "type": "true_or_false",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "label": "is_deleted",
+            "api_name": "is_deleted",
+            "description": "is_deleted",
+            "default_value": false,
+            "status": "released",
+            "create_time": 1540962431075
+          },
+          "out_tenant_id": {
+            "type": "text",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "max_length": 200,
+            "pattern": "",
+            "label": "外部企业",
+            "api_name": "out_tenant_id",
+            "description": "out_tenant_id",
+            "status": "released",
+            "create_time": 1540962431075,
+            "config": {
+              "display": 0
+            }
+          },
+          "out_owner": {
+            "type": "employee",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "is_single": true,
+            "api_name": "out_owner",
+            "status": "released",
+            "label": "外部负责人",
+            "config": {
+              "display": 1
+            },
+            "create_time": 1540962431075
+          },
+          "data_own_department": {
+            "type": "department",
+            "define_type": "system",
+            "is_index": false,
+            "is_need_convert": false,
+            "is_required": false,
+            "is_unique": false,
+            "is_single": true,
+            "api_name": "data_own_department",
+            "status": "released",
+            "label": "归属部门",
+            "is_active": true,
+            "create_time": 1540962431075
+          }
+        },
+        "actions": {},
+        "index_version": 1,
+        "_id": "5bd9387f319d19b3a0af9b87",
+        "tenant_id": "74735",
+        "is_udef": true,
+        "api_name": "SpecificationValueObj",
+        "last_modified_by": "-1000",
+        "display_name": "规格值",
+        "package": "CRM",
+        "is_active": true,
+        "version": 14,
+        "release_version": "6.4",
+        "define_type": "package",
+        "is_deleted": false,
+        "last_modified_time": 1542112889875,
+        "create_time": 1540962431075,
+        "store_table_name": "specification_value",
+        "icon_index": 0
+      },
+      "related_list_name": "target_related_list_specificationvalue",
+      "related_list_label": "规格值",
+      "layoutList": [
+        {
+          "detail_layout": {
+            "buttons": [
+              {
+                "action_type": "default",
+                "api_name": "Edit_button_default",
+                "action": "Edit",
+                "label": "编辑"
+              },
+              {
+                "action_type": "default",
+                "api_name": "ChangeOwner_button_default",
+                "action": "ChangeOwner",
+                "label": "更换负责人"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Abolish_button_default",
+                "action": "Abolish",
+                "label": "作废"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Lock_button_default",
+                "action": "Lock",
+                "label": "锁定"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Unlock_button_default",
+                "action": "Unlock",
+                "label": "解锁"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Clone_button_default",
+                "action": "Clone",
+                "label": "复制"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Print_button_default",
+                "action": "Print",
+                "label": "打印"
+              },
+              {
+                "action_type": "default",
+                "api_name": "SaleRecord_button_default",
+                "action": "SaleRecord",
+                "label": "销售记录"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Dial_button_default",
+                "action": "Dial",
+                "label": "打电话"
+              },
+              {
+                "action_type": "default",
+                "api_name": "StartBPM_button_default",
+                "action": "StartBPM",
+                "label": "发起流程"
+              },
+              {
+                "action_type": "default",
+                "api_name": "SendMail_button_default",
+                "action": "SendMail",
+                "label": "发邮件"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Discuss_button_default",
+                "action": "Discuss",
+                "label": "转发"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Remind_button_default",
+                "action": "Remind",
+                "label": "提醒"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Schedule_button_default",
+                "action": "Schedule",
+                "label": "日程"
+              }
+            ],
+            "components": [
+              {
+                "field_section": [
+                  {
+                    "form_fields": [
+                      {
+                        "is_readonly": false,
+                        "is_required": true,
+                        "render_type": "text",
+                        "field_name": "name"
+                      },
+                      {
+                        "is_readonly": false,
+                        "is_required": false,
+                        "render_type": "text",
+                        "field_name": "order_field"
+                      }
+                    ],
+                    "api_name": "base_field_section__c",
+                    "tab_index": "ltr",
+                    "column": 2,
+                    "header": "基本信息",
+                    "is_show": true
+                  }
+                ],
+                "buttons": [],
+                "api_name": "form_component",
+                "is_hidden": false,
+                "header": "详细信息",
+                "type": "form",
+                "order": 2
+              }
+            ],
+            "last_modified_time": 1542091038289,
+            "is_deleted": false,
+            "version": 3,
+            "create_time": 1542075856616,
+            "_id": "5bea35d0319d192214d86d9c",
+            "layout_description": "规格值默认布局",
+            "api_name": "SpecificationValueObj_layout_generate_by_UDObjectServer__c",
+            "default_component": "default_component",
+            "config": {
+              "edit": 1,
+              "remove": 0
+            },
+            "top_info": {
+              "type": "simple",
+              "order": 0,
+              "header": "顶部信息",
+              "buttons": [],
+              "api_name": "top_info",
+              "is_hidden": false,
+              "field_section": [
+                {
+                  "api_name": "detail",
+                  "form_fields": [
+                    {
+                      "field_name": "owner",
+                      "render_type": "employee"
+                    },
+                    {
+                      "field_name": "owner_department",
+                      "render_type": "text"
+                    },
+                    {
+                      "field_name": "last_modified_time",
+                      "render_type": "date_time"
+                    },
+                    {
+                      "field_name": "record_type",
+                      "render_type": "record_type"
+                    }
+                  ]
+                }
+              ]
+            },
+            "display_name": "默认布局",
+            "is_default": true,
+            "last_modified_by": "1000",
+            "layout_type": "detail",
+            "package": "CRM",
+            "ref_object_api_name": "SpecificationValueObj",
+            "tenant_id": "74735"
+          },
+          "list_layout": {
+            "buttons": [
+              {
+                "action_type": "default",
+                "api_name": "Edit_button_default",
+                "action": "Edit",
+                "label": "编辑"
+              },
+              {
+                "action_type": "default",
+                "api_name": "ChangeOwner_button_default",
+                "action": "ChangeOwner",
+                "label": "更换负责人"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Abolish_button_default",
+                "action": "Abolish",
+                "label": "作废"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Lock_button_default",
+                "action": "Lock",
+                "label": "锁定"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Unlock_button_default",
+                "action": "Unlock",
+                "label": "解锁"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Clone_button_default",
+                "action": "Clone",
+                "label": "复制"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Print_button_default",
+                "action": "Print",
+                "label": "打印"
+              },
+              {
+                "action_type": "default",
+                "api_name": "SaleRecord_button_default",
+                "action": "SaleRecord",
+                "label": "销售记录"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Dial_button_default",
+                "action": "Dial",
+                "label": "打电话"
+              },
+              {
+                "action_type": "default",
+                "api_name": "StartBPM_button_default",
+                "action": "StartBPM",
+                "label": "发起流程"
+              },
+              {
+                "action_type": "default",
+                "api_name": "SendMail_button_default",
+                "action": "SendMail",
+                "label": "发邮件"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Discuss_button_default",
+                "action": "Discuss",
+                "label": "转发"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Remind_button_default",
+                "action": "Remind",
+                "label": "提醒"
+              },
+              {
+                "action_type": "default",
+                "api_name": "Schedule_button_default",
+                "action": "Schedule",
+                "label": "日程"
+              }
+            ],
+            "components": [
+              {
+                "buttons": [],
+                "type": "table",
+                "api_name": "SpecificationValueObj_table_component",
+                "related_list_name": "target_related_list_specificationvalue",
+                "header": "预设业务类型",
+                "include_fields": [
+                  {
+                    "api_name": "name",
+                    "render_type": "text",
+                    "field_name": "name"
+                  },
+                  {
+                    "api_name": "specification_id",
+                    "render_type": "master_detail",
+                    "field_name": "specification_id"
+                  },
+                  {
+                    "api_name": "life_status",
+                    "render_type": "select_one",
+                    "field_name": "life_status"
+                  }
+                ],
+                "ref_object_api_name": "default__c"
+              }
+            ],
+            "last_modified_time": 1542091038289,
+            "is_deleted": false,
+            "version": 3,
+            "create_time": 1542075856616,
+            "_id": "5bea35d0319d192214d86d9c",
+            "layout_description": "规格值默认布局",
+            "api_name": "SpecificationValueObj_layout_generate_by_UDObjectServer__c",
+            "default_component": "default_component",
+            "config": {
+              "edit": 1,
+              "remove": 0
+            },
+            "top_info": {
+              "type": "simple",
+              "order": 0,
+              "header": "顶部信息",
+              "buttons": [],
+              "api_name": "top_info",
+              "is_hidden": false,
+              "field_section": [
+                {
+                  "api_name": "detail",
+                  "form_fields": [
+                    {
+                      "field_name": "owner",
+                      "render_type": "employee"
+                    },
+                    {
+                      "field_name": "owner_department",
+                      "render_type": "text"
+                    },
+                    {
+                      "field_name": "last_modified_time",
+                      "render_type": "date_time"
+                    },
+                    {
+                      "field_name": "record_type",
+                      "render_type": "record_type"
+                    }
+                  ]
+                }
+              ]
+            },
+            "display_name": "默认布局",
+            "is_default": true,
+            "last_modified_by": "1000",
+            "layout_type": "detail",
+            "package": "CRM",
+            "ref_object_api_name": "SpecificationValueObj",
+            "tenant_id": "74735"
+          },
+          "record_type": "default__c"
+        }
+      ]
+    }
+  ]
+}

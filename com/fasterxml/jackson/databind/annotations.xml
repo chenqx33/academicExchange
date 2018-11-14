@@ -1,0 +1,5 @@
+<root>
+    <item name='com.fasterxml.jackson.databind.ObjectMapper java.lang.String writeValueAsString(java.lang.Object)'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
